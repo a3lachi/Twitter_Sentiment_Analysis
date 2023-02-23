@@ -5,19 +5,16 @@ from selenium.webdriver.firefox.options import Options
 options = Options()
 options.headless = True
 
-
-
-
-dri_trends=webdriver.Firefox(options=options)
-dri_trends.get('https://trends24.in/united-states/')
+driver_trends = webdriver.Firefox(options=options)
+driver_trends.get('https://trends24.in/united-states/')
 
 try :
-    dri_trends.find_element_by_xpath("/html/body/div[3]/div[2]/div[1]/div[2]/div[2]/button[1]").click()
+    driver_trends.find_element_by_xpath("/html/body/div[3]/div[2]/div[1]/div[2]/div[2]/button[1]").click()
 except : 
     print('No CONSENT button.')
 
 
-trends_list = dri_trends.find_element_by_class_name("trend-card__list")
+trends_list = driver_trends.find_element_by_class_name("trend-card__list")
 
 tw_links = []
 
@@ -34,8 +31,8 @@ while (bol) :
 
 dri_trends.quit()
 
-
-for a in tw_links :
+print('Twitter links sample :')
+for a in tw_links[:5] :
     print(a)
 
 
@@ -45,21 +42,19 @@ for a in tw_links :
 
 
 
-
-
-
+driver_tw = webdriver.Firefox()
 
 
 ## not now button on notifications popup 
 
 try :
-    dri_tw.find_element_by_xpath("/html/body/div[1]/div/div/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div/div[2]/div/div[2]/div[2]/div[2]/div/span/span").click()
+    driver_tw.find_element_by_xpath("/html/body/div[1]/div/div/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div/div[2]/div/div[2]/div[2]/div[2]/div/span/span").click()
 except : 
     print('No CONSENT button.')
 
 
 
-tweets = dri_tw.find_element_by_xpath("/html/body/div[1]/div/div/div[2]/main/div/div/div/div[1]/div/div[3]/div/section/div/div")
+tweets = driver_tw.find_element_by_xpath("/html/body/div[1]/div/div/div[2]/main/div/div/div/div[1]/div/div[3]/div/section/div/div")
 
 bol = True
 i = 3
