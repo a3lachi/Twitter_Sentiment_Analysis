@@ -8,11 +8,11 @@ options.headless = True
 
 
 
-dri=webdriver.Firefox(options=options)
-dri.get('https://trends24.in/united-states/')
+dri_trends=webdriver.Firefox(options=options)
+dri_trends.get('https://trends24.in/united-states/')
 
 try :
-    dri.find_element_by_xpath("/html/body/div[3]/div[2]/div[1]/div[2]/div[2]/button[1]").click()
+    dri_trends.find_element_by_xpath("/html/body/div[3]/div[2]/div[1]/div[2]/div[2]/button[1]").click()
 except : 
     print('No CONSENT button.')
 
@@ -35,6 +35,8 @@ while (bol) :
 
 for a in tw_links :
     print(a)
+
+
 
 
 
