@@ -1,9 +1,14 @@
 
 from selenium import webdriver
+from selenium.webdriver.firefox.options import Options
+
+options = Options()
+options.headless = True
 
 
 
-dri=webdriver.Firefox()
+
+dri=webdriver.Firefox(options=options)
 dri.get('https://trends24.in/united-states/')
 
 try :
@@ -26,6 +31,10 @@ while (bol) :
         i+=1
     except : 
         bol = False 
+
+
+for a in tw_links :
+    print(a)
 
 
 
