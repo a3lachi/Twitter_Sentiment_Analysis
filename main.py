@@ -51,34 +51,33 @@ def Consent_Button() :
         try :
             driver_tw.find_element_by_xpath("/html/body/div[1]/div/div/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div/div[2]/div/div[2]/div[2]/div[2]/div/span/span").click()
         except : 
-            print('No CONSENT button.')
+            pass
 
 
 def Scrap_Trend(trend) :
-    driver_tw = webdriver.Firefox()
+driver_tw = webdriver.Firefox()
 
-    driver_tw.get(trend)
-    time.sleep(2)
+driver_tw.get(trend)
+time.sleep(2)
 
-    tweets = driver_tw.find_element_by_xpath("/html/body/div[1]/div/div/div[2]/main/div/div/div/div[1]/div/div[3]/div/section/div/div")
+tweets = driver_tw.find_element_by_xpath("/html/body/div[1]/div/div/div[2]/main/div/div/div/div[1]/div/div[3]/div/section/div/div")
 
-    tws_list = ""
-    i = 1
-    j=1
-    while (j<100) :
-        Consent_Button()
-        try :
-            tweet = tweets.find_element_by_xpath("./div["+str(i)+"]")
-            tws_list += tweet.text + "TWEETS3P"
-            j+=1
-            i+=1
-        except : 
-            driver_tw.execute_script("window.scrollTo(0,document.body.scrollHeight)")
-            time.sleep(2)
-            i=1
-
-
-    driver_tw.close()
+tws_list = ""
+i = 1
+j=1
+while (j<100) :
+    Consent_Button()
+    try :
+        tweet = tweets.find_element_by_xpath("./div["+str(i)+"]")
+        tws_list += tweet.text + "TWEETS3P"
+        print(tweet.text)
+        j+=1
+        i+=1
+    except : 
+        driver_tw.execute_script("window.scrollTo(0,document.body.scrollHeight)")
+        time.sleep(2)
+        i=1
+driver_tw.close()
 
     f = open("trend_"+a+".txt",a)
     f.write(tws_list)
