@@ -29,7 +29,7 @@ while (bol) :
     except : 
         bol = False 
 
-dri_trends.quit()
+driver_trends.quit()
 
 print('Twitter links sample :')
 for a in tw_links[:5] :
@@ -44,6 +44,7 @@ for a in tw_links[:5] :
 
 driver_tw = webdriver.Firefox()
 
+driver_tw.get(a)
 
 ## not now button on notifications popup 
 
@@ -62,8 +63,12 @@ while (bol) :
     try :
         tweet = tweets.find_element_by_xpath("./div["+str(i)+"]")
         print(tweet.text)
+        print(str(i)+"  : -------------------------------------------------")
         i+=1
     except : 
-        dri_tw.execute_script("window.scrollTo(0,document.body.scrollHeight)")
+        bol = False
+        
+
+dri_tw.execute_script("window.scrollTo(0,document.body.scrollHeight)")
 
 
