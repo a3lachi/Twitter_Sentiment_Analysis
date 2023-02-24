@@ -1,6 +1,9 @@
 
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
+import time 
+
+
 
 options = Options()
 options.headless = True
@@ -46,29 +49,38 @@ driver_tw = webdriver.Firefox()
 
 driver_tw.get(a)
 
+time.sleep(2)
 ## not now button on notifications popup 
 
-try :
-    driver_tw.find_element_by_xpath("/html/body/div[1]/div/div/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div/div[2]/div/div[2]/div[2]/div[2]/div/span/span").click()
-except : 
-    print('No CONSENT button.')
+def Consent_Button() :
+    try :
+        driver_tw.find_element_by_xpath("/html/body/div[1]/div/div/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div/div[2]/div/div[2]/div[2]/div[2]/div/span/span").click()
+    except : 
+        print('No CONSENT button.')
 
 
 
 tweets = driver_tw.find_element_by_xpath("/html/body/div[1]/div/div/div[2]/main/div/div/div/div[1]/div/div[3]/div/section/div/div")
 
-bol = True
-i = 3
-while (bol) :
+tws_list = []
+i = 1
+j=1
+while (j<100) :
+    Consent_Button()
     try :
         tweet = tweets.find_element_by_xpath("./div["+str(i)+"]")
-        print(tweet.text)
-        print(str(i)+"  : -------------------------------------------------")
+        tws_list.append(tweet.text)
+        j+=1
         i+=1
     except : 
-        bol = False
+        driver_tw.execute_script("window.scrollTo(0,document.body.scrollHeight)")
+        time.sleep(2)
+        i=1
+        
+driver_tw.close()
+
         
 
-driver_tw.execute_script("window.scrollTo(0,document.body.scrollHeight)")
+
 
 
