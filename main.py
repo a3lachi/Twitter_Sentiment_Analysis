@@ -69,6 +69,6 @@ while (bol) :
         bol = False
         
 
-dri_tw.execute_script("window.scrollTo(0,document.body.scrollHeight)")
+driver_tw.execute_script("window.scrollTo(0,document.body.scrollHeight)")
 
 
