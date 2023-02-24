@@ -42,67 +42,84 @@ def Get_Tw_Links() :
 
 
 
+def Consent_Button(driver) :
+    try :
+        driver.find_element_by_xpath("/html/body/div[1]/div/div/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div/div[2]/div/div[2]/div[2]/div[2]/div/span/span").click()
+    except : 
+        pass
+
+    try :
+        driver.find_element_by_xpath("/html/body/div[1]/div/div/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div/div[2]/div/div[2]/div[2]/div[2]").click()
+    except : 
+        pass
+
+def Handle() :
+	global tw_links
+	try :
+		trend = tw_links[0]
+		tw_links = tw_links[1:]
+	except :
+		trend = []
+	return trend 
+
+
+
+def Scrap_Trend() :
+	trend = Handle()
+	if len(trend)>0 : 
+		options = Options()
+		options.headless = True
+		driver_tw = webdriver.Firefox(options=options)
+
+		driver_tw.get(trend[0])
+		time.sleep(2)
+
+		tweets = driver_tw.find_element_by_xpath("/html/body/div[1]/div/div/div[2]/main/div/div/div/div[1]/div/div[3]/div/section/div/div")
+
+		tws_list = ""
+		i = 1
+		j=1
+		while (j<100) :
+		    Consent_Button(driver_tw)
+		    try :
+		        tweet = tweets.find_element_by_xpath("./div["+str(i)+"]")
+		        tws_list += tweet.text + "\n------------------------------\n"
+		        print(trend[1] + " __ " + str(j))
+		        j+=1
+		        i+=1
+		    except : 
+		        driver_tw.execute_script("window.scrollTo(0,document.body.scrollHeight)")
+		        time.sleep(2)
+		        i=1
+
+		driver_tw.close()
+
+		f = open("trend_"+trend[1]+".txt","a+")
+		f.write(tws_list)
+		f.close()
+
+
+
+
+
+
+
+
 tw_links = Get_Tw_Links() 
-
-
-
-
-def Consent_Button() :
-        try :
-            driver_tw.find_element_by_xpath("/html/body/div[1]/div/div/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div/div[2]/div/div[2]/div[2]/div[2]/div/span/span").click()
-        except : 
-            pass
-
-
-def Scrap_Trend(trend) :
-	driver_tw = webdriver.Firefox()
-
-	driver_tw.get(trend[0])
-	time.sleep(2)
-
-	tweets = driver_tw.find_element_by_xpath("/html/body/div[1]/div/div/div[2]/main/div/div/div/div[1]/div/div[3]/div/section/div/div")
-
-	tws_list = ""
-	i = 1
-	j=1
-	while (j<100) :
-	    Consent_Button()
-	    try :
-	        tweet = tweets.find_element_by_xpath("./div["+str(i)+"]")
-	        tws_list += tweet.text + "\n------------------------------\n"
-	        print(tweet.text)
-	        print("--------------------------------")
-	        j+=1
-	        i+=1
-	    except : 
-	        driver_tw.execute_script("window.scrollTo(0,document.body.scrollHeight)")
-	        time.sleep(2)
-	        i=1
-
-	driver_tw.close()
-
-    f = open("trend_"+trend[1]+".txt",a)
-    f.write(tws_list)
-    f.close()
-
 
 # Create a list to hold the threads
 threads = []
 
 # Create 5 threads, each one running the open_firefox function
 for i in range(5):
-    t = threading.Thread(target=Scrap_Trend(tw_links[i]))
+    t = threading.Thread(target=Scrap_Trend)
     threads.append(t)
 
-# Start each thread
 for t in threads:
     t.start()
 
-# Wait for each thread to finish
 for t in threads:
     t.join()
-
-
 
 
 
