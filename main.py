@@ -14,7 +14,7 @@ def Get_Tw_Links() :
 	try :
 		driver_trends.find_element_by_xpath("/html/body/div[3]/div[2]/div[1]/div[2]/div[2]/button[1]").click()
 	except : 
-		print('No CONSENT button.')
+		pass
 
 
 	trends_list = driver_trends.find_element_by_class_name("trend-card__list")
@@ -55,50 +55,54 @@ def Consent_Button() :
 
 
 def Scrap_Trend(trend) :
-driver_tw = webdriver.Firefox()
+	driver_tw = webdriver.Firefox()
 
-driver_tw.get(trend)
-time.sleep(2)
+	driver_tw.get(trend)
+	time.sleep(2)
 
-tweets = driver_tw.find_element_by_xpath("/html/body/div[1]/div/div/div[2]/main/div/div/div/div[1]/div/div[3]/div/section/div/div")
+	tweets = driver_tw.find_element_by_xpath("/html/body/div[1]/div/div/div[2]/main/div/div/div/div[1]/div/div[3]/div/section/div/div")
 
-tws_list = ""
-i = 1
-j=1
-while (j<100) :
-    Consent_Button()
-    try :
-        tweet = tweets.find_element_by_xpath("./div["+str(i)+"]")
-        tws_list += tweet.text + "TWEETS3P"
-        print(tweet.text)
-        j+=1
-        i+=1
-    except : 
-        driver_tw.execute_script("window.scrollTo(0,document.body.scrollHeight)")
-        time.sleep(2)
-        i=1
-driver_tw.close()
+	tws_list = ""
+	i = 1
+	j=1
+	while (j<100) :
+	    Consent_Button()
+	    try :
+	        tweet = tweets.find_element_by_xpath("./div["+str(i)+"]")
+	        tws_list += tweet.text + "\n------------------------------\n"
+	        print(tweet.text)
+	        print("--------------------------------")
+	        j+=1
+	        i+=1
+	    except : 
+	        driver_tw.execute_script("window.scrollTo(0,document.body.scrollHeight)")
+	        time.sleep(2)
+	        i=1
+
+	driver_tw.close()
 
     f = open("trend_"+a+".txt",a)
     f.write(tws_list)
     f.close()
 
-        
-
-num_threads = 5
 
 # Create a list to hold the threads
 threads = []
 
-# Create the threads and add them to the list
-for i in range(num_threads):
-    thread = threading.Thread(target=Scrap_Trend(tw_links[i])).start
+# Create 5 threads, each one running the open_firefox function
+for i in range(5):
+    t = threading.Thread(target=Scrap_Trend(tw_links[i]))
+    threads.append(t)
 
-# Wait for all threads to complete
-for thread in threads:
-    thread.join()
+# Start each thread
+for t in threads:
+    t.start()
 
-print("All threads have completed")
+# Wait for each thread to finish
+for t in threads:
+    t.join()
+
+
 
 
 
