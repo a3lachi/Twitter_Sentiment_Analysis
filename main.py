@@ -27,7 +27,7 @@ def Get_Tw_Links() :
 	while (bol) :
 		try :
 			trend = trends_list.find_element_by_xpath("./li["+str(i)+"]")
-			tw_links.append(str(trend.find_element_by_xpath("./a").get_attribute('href')))
+			tw_links.append([str(trend.find_element_by_xpath("./a").get_attribute('href')) , trend.get_attribute('title')])
 			i+=1
 		except : 
 			bol = False 
@@ -35,7 +35,7 @@ def Get_Tw_Links() :
 	driver_trends.quit()
 
 	print('Twitter links sample :')
-	for a in tw_links[:5] :
+	for a in tw_links[10:15] :
 		print(a)
 
 	return tw_links
@@ -57,7 +57,7 @@ def Consent_Button() :
 def Scrap_Trend(trend) :
 	driver_tw = webdriver.Firefox()
 
-	driver_tw.get(trend)
+	driver_tw.get(trend[0])
 	time.sleep(2)
 
 	tweets = driver_tw.find_element_by_xpath("/html/body/div[1]/div/div/div[2]/main/div/div/div/div[1]/div/div[3]/div/section/div/div")
@@ -81,7 +81,7 @@ def Scrap_Trend(trend) :
 
 	driver_tw.close()
 
-    f = open("trend_"+a+".txt",a)
+    f = open("trend_"+trend[1]+".txt",a)
     f.write(tws_list)
     f.close()
 
