@@ -3,7 +3,7 @@
 
 This project cover this data engineering model : 
 
-- Find a data source : Twitter
+- Data source : Twitter
 
 - Data to a CSV.
 
