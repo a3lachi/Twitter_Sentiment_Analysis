@@ -68,7 +68,7 @@ def Handle() :
 
 def Scrap_Trend() :
     trend = Handle()
-    
+    global Swipe 
     options = Options()
     global Headless
     if Headless == True :
@@ -84,7 +84,7 @@ def Scrap_Trend() :
         tws_list = ""
         i = 1
         j=1
-        while (j<100) :
+        while (j<Swipe) :
             Consent_Button(driver_tw)
             try :
                 tweet = tweets.find_element_by_xpath("./div["+str(i)+"]")
@@ -109,9 +109,12 @@ def Scrap_Trend() :
 
 
 
-def Start_Threads(numb,Hdls) :
+def Start_Threads(numb,Hdls,Swp) :
     global Headless
     Headless = Hdls
+
+    global Swipe 
+    Swipe = Swp 
 
     threads = []
     global tw_links
