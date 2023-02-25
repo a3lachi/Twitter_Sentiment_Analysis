@@ -3,6 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
 import time 
 import threading
+import os 
 
 
 def Get_Tw_Links() :
@@ -64,6 +65,13 @@ def Handle() :
         trend = []
     return trend 
 
+def Write_Data(Folder, Data) :
+    Dir = os.listdir()
+    if Folder not in Dir :
+        os.mkdir(Folder)
+    f = open("./"+Folder+"/trend_"+trend[1]+".txt","a+")
+    f.write(Data)
+    f.close()
 
 
 def Scrap_Trend() :
@@ -71,6 +79,7 @@ def Scrap_Trend() :
     global Swipe 
     options = Options()
     global Headless
+    global Folder 
     if Headless == True :
         options.headless = True
     driver_tw = webdriver.Firefox(options=options)
@@ -97,9 +106,7 @@ def Scrap_Trend() :
                 i=1
         
 
-        f = open("./data/trend_"+trend[1]+".txt","a+")
-        f.write(tws_list)
-        f.close()
+        Write_Data(Folder, tws_list)
 
         print("Finished scraping trend : " + trend[1] )
 
@@ -109,12 +116,15 @@ def Scrap_Trend() :
 
 
 
-def Start_Threads(numb,Hdls,Swp) :
+def Start_Threads(numb,Hdls,Swp,Fldr) :
     global Headless
     Headless = Hdls
 
     global Swipe 
     Swipe = Swp 
+
+    global Folder 
+    Folder = Fldr
 
     threads = []
     global tw_links

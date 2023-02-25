@@ -30420,3 +30420,109 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 1677339891250	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/tl/f4kccrn96jdb2jkwdlhmgy200000gn/T/rust_mozprofileRANnPH/search.json.mozlz4", (void 0)))
 console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/tl/f4kccrn96jdb2jkwdlhmgy200000gn/T/rust_mozprofilecMErRk/search.json.mozlz4", (void 0)))
+1677339907953	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1677339908412	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1677339908818	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+[Child 32132, MediaDecoderStateMachine #1] WARNING: Decoder=116445b00 Decode error: NS_ERROR_DOM_MEDIA_CANCELED (0x806e000a) - RefPtr<MediaSourceTrackDemuxer::SeekPromise> mozilla::MediaSourceTrackDemuxer::DoSeek(const mozilla::media::TimeUnit &): manager is detached.: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachineBase.cpp:164
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1677340113316	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/tl/f4kccrn96jdb2jkwdlhmgy200000gn/T/rust_mozprofilefZ7yh4"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1677340113829	Marionette	INFO	Marionette enabled
+1677340113882	Marionette	INFO	Listening on port 62943
+1677340114382	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/tl/f4kccrn96jdb2jkwdlhmgy200000gn/T/rust_mozprofilefZ7yh4/search.json.mozlz4", (void 0)))
+1677340116924	Marionette	INFO	Stopped listening on port 62943
+1677340118450	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/tl/f4kccrn96jdb2jkwdlhmgy200000gn/T/rust_mozprofile0gdP4M"
+1677340118450	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/tl/f4kccrn96jdb2jkwdlhmgy200000gn/T/rust_mozprofilekkuiRE"
+1677340118451	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/tl/f4kccrn96jdb2jkwdlhmgy200000gn/T/rust_mozprofileeLP19Y"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1677340119127	Marionette	INFO	Marionette enabled
+1677340119176	Marionette	INFO	Marionette enabled
+1677340119177	Marionette	INFO	Marionette enabled
+1677340119274	Marionette	INFO	Listening on port 63009
+1677340119279	Marionette	INFO	Listening on port 63008
+1677340119552	Marionette	INFO	Listening on port 63007
+1677340119614	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1677340119660	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1677340119704	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/tl/f4kccrn96jdb2jkwdlhmgy200000gn/T/rust_mozprofileeLP19Y/search.json.mozlz4", (void 0)))
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/tl/f4kccrn96jdb2jkwdlhmgy200000gn/T/rust_mozprofile0gdP4M/search.json.mozlz4", (void 0)))
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/tl/f4kccrn96jdb2jkwdlhmgy200000gn/T/rust_mozprofilekkuiRE/search.json.mozlz4", (void 0)))
+1677340393244	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/tl/f4kccrn96jdb2jkwdlhmgy200000gn/T/rust_mozprofileMGBVzT"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1677340393741	Marionette	INFO	Marionette enabled
+1677340393801	Marionette	INFO	Listening on port 63267
+1677340394350	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/tl/f4kccrn96jdb2jkwdlhmgy200000gn/T/rust_mozprofileMGBVzT/search.json.mozlz4", (void 0)))
+1677340396851	Marionette	INFO	Stopped listening on port 63267
+1677340398363	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/tl/f4kccrn96jdb2jkwdlhmgy200000gn/T/rust_mozprofilepHWg6K"
+1677340398367	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/tl/f4kccrn96jdb2jkwdlhmgy200000gn/T/rust_mozprofilehen2cV"
+1677340398367	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/tl/f4kccrn96jdb2jkwdlhmgy200000gn/T/rust_mozprofilesGcWdj"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1677340399331	Marionette	INFO	Marionette enabled
+1677340399370	Marionette	INFO	Marionette enabled
+1677340399375	Marionette	INFO	Marionette enabled
+1677340399491	Marionette	INFO	Listening on port 63332
+1677340399491	Marionette	INFO	Listening on port 63329
+1677340399572	Marionette	INFO	Listening on port 63333
+1677340400452	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1677340400649	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1677340400664	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/tl/f4kccrn96jdb2jkwdlhmgy200000gn/T/rust_mozprofilehen2cV/search.json.mozlz4", (void 0)))
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/tl/f4kccrn96jdb2jkwdlhmgy200000gn/T/rust_mozprofilepHWg6K/search.json.mozlz4", (void 0)))
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/tl/f4kccrn96jdb2jkwdlhmgy200000gn/T/rust_mozprofilesGcWdj/search.json.mozlz4", (void 0)))
