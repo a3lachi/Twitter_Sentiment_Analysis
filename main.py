@@ -67,11 +67,12 @@ def Handle() :
 def Scrap_Trend() :
 	trend = Handle()
 	options = Options()
-	##options.headless = True
+	options.headless = True
 	driver_tw = webdriver.Firefox(options=options)
 	while len(trend)>0 : 
 		driver_tw.get(trend[0])
 		time.sleep(2)
+		Consent_Button(driver_tw)
 
 		tweets = driver_tw.find_element_by_xpath("/html/body/div[1]/div/div/div[2]/main/div/div/div/div[1]/div/div[3]/div/section/div/div")
 
@@ -92,7 +93,7 @@ def Scrap_Trend() :
 		        i=1
 		
 
-		f = open("trend_"+trend[1]+".txt","a+")
+		f = open("./data/trend_"+trend[1]+".txt","a+")
 		f.write(tws_list)
 		f.close()
 
@@ -104,11 +105,10 @@ def Scrap_Trend() :
 
 tw_links = Get_Tw_Links() 
 
-tw_links = tw_links[:15]
 
 threads = []
 
-for i in range(4):
+for i in range(5):
     t = threading.Thread(target=Scrap_Trend)
     threads.append(t)
 
