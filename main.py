@@ -21,7 +21,7 @@ def Get_Tw_Links() :
 
 	tw_links = []
 
-	## iterate over trends
+
 	bol = True
 	i = 1
 	while (bol) :
