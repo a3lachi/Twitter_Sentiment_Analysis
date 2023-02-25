@@ -71,7 +71,7 @@ def Scrap_Trend() :
 	driver_tw = webdriver.Firefox(options=options)
 	while len(trend)>0 : 
 		driver_tw.get(trend[0])
-		time.sleep(2)
+		time.sleep(3)
 		Consent_Button(driver_tw)
 
 		tweets = driver_tw.find_element_by_xpath("/html/body/div[1]/div/div/div[2]/main/div/div/div/div[1]/div/div[3]/div/section/div/div")
@@ -84,18 +84,19 @@ def Scrap_Trend() :
 		    try :
 		        tweet = tweets.find_element_by_xpath("./div["+str(i)+"]")
 		        tws_list += tweet.text + "\n------------------------------\n"
-		        print(trend[1] + " __ " + str(j))
 		        j+=1
 		        i+=1
 		    except : 
 		        driver_tw.execute_script("window.scrollTo(0,document.body.scrollHeight)")
-		        time.sleep(2)
+		        time.sleep(3)
 		        i=1
 		
 
 		f = open("./data/trend_"+trend[1]+".txt","a+")
 		f.write(tws_list)
 		f.close()
+
+		print("Finished scraping trend : " + trend[1] )
 
 		trend = Handle()
 	
@@ -108,7 +109,7 @@ tw_links = Get_Tw_Links()
 
 threads = []
 
-for i in range(5):
+for i in range(4):
     t = threading.Thread(target=Scrap_Trend)
     threads.append(t)
 
