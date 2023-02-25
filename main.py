@@ -66,11 +66,10 @@ def Handle() :
 
 def Scrap_Trend() :
 	trend = Handle()
-	if len(trend)>0 : 
-		options = Options()
-		##options.headless = True
-		driver_tw = webdriver.Firefox(options=options)
-
+	options = Options()
+	##options.headless = True
+	driver_tw = webdriver.Firefox(options=options)
+	while len(trend)>0 : 
 		driver_tw.get(trend[0])
 		time.sleep(2)
 
@@ -91,24 +90,25 @@ def Scrap_Trend() :
 		        driver_tw.execute_script("window.scrollTo(0,document.body.scrollHeight)")
 		        time.sleep(2)
 		        i=1
-
-		driver_tw.close()
+		
 
 		f = open("trend_"+trend[1]+".txt","a+")
 		f.write(tws_list)
 		f.close()
 
-		Scrap_Trend()
+		trend = Handle()
+	
+	driver_tw.close()
 
 
 
 tw_links = Get_Tw_Links() 
 
-tw_links = tw_links[:18]
+tw_links = tw_links[:15]
 
 threads = []
 
-for i in range(7):
+for i in range(4):
     t = threading.Thread(target=Scrap_Trend)
     threads.append(t)
 
