@@ -100,17 +100,10 @@ def Scrap_Trend() :
 
 
 
-
-
-
-
-
 tw_links = Get_Tw_Links() 
 
-# Create a list to hold the threads
 threads = []
 
-# Create 5 threads, each one running the open_firefox function
 for i in range(5):
     t = threading.Thread(target=Scrap_Trend)
     threads.append(t)
