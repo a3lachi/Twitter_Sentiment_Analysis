@@ -3,7 +3,7 @@
 
 This project cover this data engineering model : 
 
-- Data source : Twitter
+- Scrap and clean data from Twitter
 
 - Cron in Snowflake/BigQuery/Heroku
 
