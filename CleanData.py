@@ -59,6 +59,7 @@ while  k<len(Tada) :
         k+=1
 
     else :
+        
         Tada.pop(k)
 
 
