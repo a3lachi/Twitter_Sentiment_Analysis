@@ -10,7 +10,7 @@ def CheckNum(strng) :
     except :
         return False
 
-Data = ' '
+Data = ''
 files = os.listdir('data')
 for a in files[4:50] :
     if '.txt' in a :
