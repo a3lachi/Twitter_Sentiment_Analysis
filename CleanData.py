@@ -12,7 +12,7 @@ def CheckNum(strng) :
 
 Data = ''
 files = os.listdir('data/25FEB')
-for a in files[:1] :
+for a in files :
     if '.txt' in a :
         f = open('./data/25FEB/'+a,'r')
         ata = f.read()
@@ -22,7 +22,7 @@ for a in files[:1] :
 Data = Data.split("------------------------------")
 
 Tada = []
-
+FirstSize = len(Data)
 for a in Data :
     Tada.append(list(a.split('\n')))
 
@@ -72,18 +72,18 @@ for a in Tada :
 
 
 m=0
+Tada = []
 for i in range(len(Data)) :
     if len(Data[i])==2 :
         Data[i].pop(1)
-    if len(Data[i]) > 2 :
-        print(Data[i])
-        m+=1
+    Tada.append(Data[i])
 
 
 
-print(len(Data))
+print(len(Tada))
+print(FirstSize)
 
-print(m)
+
 
 
 

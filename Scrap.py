@@ -10,7 +10,7 @@ def Get_Tw_Links() :
     options = Options()
     options.headless = True
     driver_trends = webdriver.Firefox(options=options)
-    driver_trends.get('https://trends24.in/france/')
+    driver_trends.get('https://trends24.in/united-states/')
 
     try :
         driver_trends.find_element_by_xpath("/html/body/div[3]/div[2]/div[1]/div[2]/div[2]/button[1]").click()
@@ -95,15 +95,16 @@ def Scrap_Trend() :
         j=1
         while (j<Swipe) :
             Consent_Button(driver_tw)
-            try :
-                tweet = tweets.find_element_by_xpath("./div["+str(i)+"]")
-                tws_list += tweet.text + "\n------------------------------\n"
-                j+=1
-                i+=1
-            except : 
-                driver_tw.execute_script("window.scrollTo(0,document.body.scrollHeight)")
-                time.sleep(3)
-                i=1
+            while(i<10) :
+                try :
+                    tweet = tweets.find_element_by_xpath("./div["+str(i)+"]")
+                    tws_list += tweet.text + "\n------------------------------\n"
+                    i+=1
+                except : 
+                    driver_tw.execute_script("window.scrollTo(0,document.body.scrollHeight)")
+                    j+=1
+                    time.sleep(3)
+                    i=1
         
 
         Write_Data(Folder, tws_list , trend)
