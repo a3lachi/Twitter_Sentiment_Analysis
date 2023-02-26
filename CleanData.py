@@ -10,9 +10,9 @@ def CheckNum(strng) :
     except :
         return False
 
-Data = ''
+Data = ' '
 files = os.listdir('data')
-for a in files[:10] :
+for a in files[4:50] :
     if '.txt' in a :
         f = open('./data/'+a,'r')
         ata = f.read()
@@ -33,9 +33,12 @@ while  k<len(Tada) :
         j=0
         i=0
         while (i-j<len(Tada[k])) :
-            if Tada[k][i-j] in ['Afficher cette' , 'En réponse à ' , '·' , '' ]  :
+            if Tada[k][i-j] in ['Afficher cette discussion' , 'En réponse à ' , '·' , '' ]  :
                 Tada[k].pop(i-j)
                 j+=1
+            if Tada[k][1][0] == '@' :
+                Tada[k] = Tada[k][2:]
+            
             i+=1
 
         try :
@@ -45,6 +48,8 @@ while  k<len(Tada) :
                 Tada[k] = Tada[k][:-3]
             elif  CheckNum(Tada[k][-2]) :
                 Tada[k] = Tada[k][:-2]
+            elif  CheckNum(Tada[k][-1]) :
+                Tada[k] = Tada[k][:-1]
         except :
             pass
 
@@ -54,12 +59,19 @@ while  k<len(Tada) :
         Tada.pop(k)
 
 
-lens = []
+Data = []
 for a in Tada :
-    if len(a) <4 :
+    if  (a[0][0]).isnumeric() :
+        Data.append(a[1:])
+
+
+j=0
+for a in Data :
+    if len(a)==2 :
+        j+=1
         print(a)
 
-
+print(j)
 
 
 
