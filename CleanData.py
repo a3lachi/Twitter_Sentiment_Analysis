@@ -75,7 +75,7 @@ for a in Tada :
 for i in range(len(Data)) :
     if len(Data[i])==2 :
         Data[i].pop(1)
-    if len(Data[i])==3 :
+    if len(Data[i])>2 :
         print(Data[i])
 
 
