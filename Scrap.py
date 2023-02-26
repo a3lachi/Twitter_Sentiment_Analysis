@@ -10,7 +10,7 @@ def Get_Tw_Links() :
     options = Options()
     options.headless = True
     driver_trends = webdriver.Firefox(options=options)
-    driver_trends.get('https://trends24.in/united-states/')
+    driver_trends.get('https://trends24.in/france/')
 
     try :
         driver_trends.find_element_by_xpath("/html/body/div[3]/div[2]/div[1]/div[2]/div[2]/button[1]").click()
@@ -65,11 +65,11 @@ def Handle() :
         trend = []
     return trend 
 
-def Write_Data(Folder, Data) :
-    Dir = os.listdir()
+def Write_Data(Folder, Data , trend) :
+    Dir = os.listdir('data')
     if Folder not in Dir :
-        os.mkdir(Folder)
-    f = open("./"+Folder+"/trend_"+trend[1]+".txt","a+")
+        os.mkdir('./data/'+Folder)
+    f = open("./data/"+Folder+"/trend_"+trend[1]+".txt","a+")
     f.write(Data)
     f.close()
 
@@ -106,7 +106,7 @@ def Scrap_Trend() :
                 i=1
         
 
-        Write_Data(Folder, tws_list)
+        Write_Data(Folder, tws_list , trend)
 
         print("Finished scraping trend : " + trend[1] )
 
