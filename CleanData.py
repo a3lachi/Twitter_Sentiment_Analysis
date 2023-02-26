@@ -66,7 +66,7 @@ def ProcessData(Data) :
     Data = []
     for a in Tada :
         try :
-            if  (a[0][0]).isnumeric() :
+            if (a[0][0]).isnumeric() :
                 Data.append(a[1:])
         except :
             pass
@@ -88,7 +88,10 @@ Tada = ProcessData(Data)
 
 print(len(Data))
 print(len(Tada))
-
+i=0
+for a in Tada :
+    i+=1*(len(a)==1)
+print(i)
 
 
 
