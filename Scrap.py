@@ -35,6 +35,7 @@ def Get_Tw_Links() :
 
     driver_trends.quit()
 
+    print('Trending tweets urls scraped with success.')
     return twlinks
 
 
@@ -89,17 +90,18 @@ def Scrap_Trend() :
         j=1
         while (j<Swipe) :
             Consent_Button(driver_tw)
-            while(i<10) :
-                try :
-                    tweet = tweets.find_element_by_xpath("./div["+str(i)+"]")
-                    print(tweet.text)
+            
+            try :
+                tweetat = tweets.find_elements_by_xpath("./div")
+                for tweet in tweetat : 
+                    print(len(tweetat))
                     tws_list += tweet.text + "\n------------------------------\n"
-                    i+=1
-                except : 
-                    driver_tw.execute_script("window.scrollTo(0,document.body.scrollHeight)")
-                    j+=1
-                    time.sleep(3)
-                    i=1
+                driver_tw.execute_script("window.scrollTo(0,document.body.scrollHeight)")
+                time.sleep(3)
+                j+=1
+            except :
+                pass
+                
         
 
         Write_Data(Folder, tws_list , trend)
