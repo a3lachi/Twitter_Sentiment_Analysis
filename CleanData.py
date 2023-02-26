@@ -10,7 +10,7 @@ def CheckNum(strng) :
     except :
         return False
 
-def LoadData(Folder)
+def LoadData(Folder) :
     Data = ''
     files = os.listdir('data/'+Folder)
     for a in files :
@@ -79,6 +79,15 @@ def ProcessData(Data) :
         Tada.append(Data[i])
 
     return Tada
+
+
+
+Data = LoadData('26FEB')
+
+Tada = ProcessData(Data)
+
+print(len(Data))
+print(len(Tada))
 
 
 

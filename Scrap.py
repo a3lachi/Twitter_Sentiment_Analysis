@@ -102,7 +102,6 @@ def Scrap_Trend() :
                 pass
                 
         
-
         Write_Data(Folder, tws_list , trend)
 
         print("Finished scraping trend : " + trend[1] )
