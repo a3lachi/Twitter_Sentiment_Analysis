@@ -20,7 +20,7 @@ def Get_Tw_Links() :
 
     trends_list = driver_trends.find_element_by_class_name("trend-card__list")
 
-    tw_links = []
+    twlinks = []
 
 
     bol = True
@@ -28,20 +28,14 @@ def Get_Tw_Links() :
     while (bol) :
         try :
             trend = trends_list.find_element_by_xpath("./li["+str(i)+"]")
-            tw_links.append([str(trend.find_element_by_xpath("./a").get_attribute('href')) , trend.get_attribute('title')])
+            twlinks.append([str(trend.find_element_by_xpath("./a").get_attribute('href')) , trend.get_attribute('title')])
             i+=1
         except : 
             bol = False 
 
     driver_trends.quit()
 
-    print('Twitter links sample :')
-    for a in tw_links[10:15] :
-        print(a)
-
-    print(" ")
-
-    return tw_links
+    return twlinks
 
 
 
@@ -98,6 +92,7 @@ def Scrap_Trend() :
             while(i<10) :
                 try :
                     tweet = tweets.find_element_by_xpath("./div["+str(i)+"]")
+                    print(tweet.text)
                     tws_list += tweet.text + "\n------------------------------\n"
                     i+=1
                 except : 
@@ -117,7 +112,7 @@ def Scrap_Trend() :
 
 
 
-def Start_Threads(numb,Hdls,Swp,Fldr) :
+def Start_Threads(numb,Hdls,Swp,Fldr,NumbTrends) :
     global Headless
     Headless = Hdls
 
@@ -130,6 +125,7 @@ def Start_Threads(numb,Hdls,Swp,Fldr) :
     threads = []
     global tw_links
     tw_links = Get_Tw_Links() 
+    tw_links = tw_links[:NumbTrends]
     for i in range(numb):
         t = threading.Thread(target=Scrap_Trend)
         threads.append(t)

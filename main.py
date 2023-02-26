@@ -2,8 +2,8 @@ from Scrap import *
 
 
 def main():
-    # Start_Threads(Number of threads   ,   Headless   ,   Swipe Rate  ,  Folder to save data )
-    Start_Threads(4,True,100,"25FEB")
+    # Start_Threads(Number of threads   ,   Headless   ,   Swipe Rate  ,  Folder to save data , Number of trends to scrap )
+    Start_Threads(1,True,10,"26FEB",5)
 
 
 if __name__ == "__main__":
