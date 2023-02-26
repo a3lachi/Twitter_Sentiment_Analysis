@@ -94,7 +94,6 @@ def Scrap_Trend() :
             try :
                 tweetat = tweets.find_elements_by_xpath("./div")
                 for tweet in tweetat : 
-                    print(len(tweetat))
                     tws_list += tweet.text + "\n------------------------------\n"
                 driver_tw.execute_script("window.scrollTo(0,document.body.scrollHeight)")
                 time.sleep(3)
