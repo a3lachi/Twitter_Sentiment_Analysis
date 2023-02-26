@@ -31106,3 +31106,13 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/tl/f4kccrn96jdb2jkwdlhmgy200000gn/T/rust_mozprofileHnrH6Q/search.json.mozlz4", (void 0)))
 [Child 44727, MediaDecoderStateMachine #1] WARNING: Decoder=111236200 state=DECODING_METADATA Decode metadata failed, shutting down decoder: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:372
 [Child 44727, MediaDecoderStateMachine #1] WARNING: Decoder=111236200 Decode error: NS_ERROR_DOM_MEDIA_METADATA_ERR (0x806e0006) - static MP4Metadata::ResultAndByteBuffer mozilla::MP4Metadata::Metadata(mozilla::ByteStream *): Cannot parse metadata: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachineBase.cpp:164
+1677384986793	Marionette	INFO	Stopped listening on port 51762
+JavaScript error: https://abs.twimg.com/responsive-web/client-web/vendor.604c5ada.js, line 74: TypeError: can't access dead object
+1677384999912	Marionette	INFO	Stopped listening on port 51801
+JavaScript error: https://abs.twimg.com/responsive-web/client-web/vendor.604c5ada.js, line 74: TypeError: can't access dead object
+1677385001303	Marionette	INFO	Stopped listening on port 51765
+JavaScript error: https://abs.twimg.com/responsive-web/client-web/vendor.604c5ada.js, line 74: TypeError: can't access dead object
+1677385105912	Marionette	INFO	Stopped listening on port 51764
+JavaScript error: https://abs.twimg.com/responsive-web/client-web/vendor.604c5ada.js, line 74: TypeError: can't access dead object
+1677385115717	Marionette	INFO	Stopped listening on port 51802
+JavaScript error: https://abs.twimg.com/responsive-web/client-web/vendor.604c5ada.js, line 74: TypeError: can't access dead object
