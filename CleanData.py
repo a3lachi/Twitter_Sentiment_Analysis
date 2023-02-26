@@ -59,7 +59,6 @@ while  k<len(Tada) :
         k+=1
 
     else :
-        
         Tada.pop(k)
 
 
@@ -72,14 +71,17 @@ for a in Tada :
         pass
 
 
-j=0
-for a in Data :
-    if len(a)==2 :
-        j+=1
-        print(a)
 
-print(j)
+for i in range(len(Data)) :
+    if len(Data[i])==2 :
+        Data[i].pop(1)
+    if len(Data[i])==3 :
+        print(Data[i])
+
+
+
 print(len(Data))
+
 
 
 
