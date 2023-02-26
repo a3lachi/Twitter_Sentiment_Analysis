@@ -35,6 +35,7 @@ for k in range(len(Tada)) :
             Tada[k] = Tada[k][:-4]
     except : 
         pass
+    k+=1
 
 
 for a in Tada :
