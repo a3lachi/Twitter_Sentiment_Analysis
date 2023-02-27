@@ -135,5 +135,7 @@ def Start_Threads(numb,Hdls,Swp,Fldr,NumbTrends) :
     for t in threads:
         t.join()
 
+    print(' Tweets scraped with success.')
+
 
 
