@@ -111,7 +111,6 @@ def Scrap_Trend() :
     driver_tw.close()
 
 
-
 def Start_Threads(numb,Hdls,Swp,Fldr,NumbTrends) :
     global Headless
     Headless = Hdls
