@@ -16,14 +16,14 @@ def CheckNum(strn) :
                 if ',' in (spl[0]+spl[1]) :
                     return True 
         except :
-            return True 
+            return False 
     return False 
 
 ## Load all data in folder and return it as a string
 def LoadData(Folder) :
     Data = ''
     files = os.listdir('data/'+Folder)
-    for a in files[:4] :
+    for a in files[:10] :
         if '.txt' in a :
             f = open('./data/'+Folder+'/'+a,'r')
             ata = f.read()
@@ -44,8 +44,6 @@ def ProcessData(Data) :
     ## Extract 'User'
     for i in range(len(Tada)) :
         if len(Tada[i])>1 and len(Tada[i][1])>1 :
-            pada = pd.DataFrame([Tada[i][1]],columns=['User'])
-            df = pd.concat([df,pada])
             Tada[i]=[Tada[i][1]]+Tada[i][4:]
         Tada[i].pop(-1)
         ##print(Tada[i][:3])
@@ -59,7 +57,6 @@ def ProcessData(Data) :
         while j < len(Tada[i]) :
             try :
                 if CheckNum(Tada[i][j]) :
-                    print(Tada[i][j])
                     Tada[i].pop(j)
                 else :
                     j+=1
@@ -67,8 +64,27 @@ def ProcessData(Data) :
                 j+=1
             
         ##print(Tada[i])
+    for i in range(len(Tada)) :
+        try :
+            if Tada[i][1] == '  et  ' :
+                Tada[i].pop(1)
+                Tada[i].pop(1)
+        except :
+            pass
 
     ## print(df.head(20))
+
+    ## remove GIF ALT
+    for i in range(len(Tada)) :
+        j=0
+        while j < len(Tada[i]) :
+            if Tada[i][j]=='GIF' or Tada[i][j]=='ALT' :
+                Tada[i].pop(j)
+            else :
+                j+=1
+
+
+    
 
     return Tada 
 
@@ -78,6 +94,16 @@ Data = LoadData('26FEB')
 
 
 Tada = ProcessData(Data)
+
+
+for a in Tada :
+    try :
+        k = a.index('Citer le Tweet')
+        if k>-1 :
+            print(a[k+5:])
+    except :
+        pass
+
 
 
 
