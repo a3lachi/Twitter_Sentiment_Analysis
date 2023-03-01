@@ -48,9 +48,9 @@ def ProcessData(Data) :
             df = pd.concat([df,pada])
             Tada[i]=[Tada[i][1]]+Tada[i][4:]
         Tada[i].pop(-1)
-        print(Tada[i][:3])
+        ##print(Tada[i][:3])
 
-    ## eliminate En réponse à
+    ## eliminate En réponse à and likes/retweet/shares/seens
     for i in range(len(Tada)) :
         if len(Tada[i])>1 and Tada[i][1]=='En réponse à ' :
             Tada[i].pop(1)
@@ -59,6 +59,7 @@ def ProcessData(Data) :
         while j < len(Tada[i]) :
             try :
                 if CheckNum(Tada[i][j]) :
+                    print(Tada[i][j])
                     Tada[i].pop(j)
                 else :
                     j+=1
