@@ -5,11 +5,15 @@ import pandas as pd
 def CheckNum(strng) :
     if strng.isnumeric() :
         return True 
-    try :
-        if (strng.split(' ')[0]+strng.split(' ')[1]).isnumeric() :
-            return True
-    except :
-        return False
+    if 'k' in strng :
+        return CheckNum(strn.split('k')[0])
+    else :
+        try :
+            spl = strng.split(' ')
+            if (spl[0]+spl[1]).isnumeric() :
+                return True
+        except :
+            return False
 
 ## Load all data in folder and return it as a string
 def LoadData(Folder) :
@@ -50,15 +54,15 @@ def ProcessData(Data) :
     ## print(df.head(20))
 
 
-Data = LoadData('26FEB')
+##Data = LoadData('26FEB')
 
 
 
-ProcessData(Data)
+##ProcessData(Data)
 
 
 
-    
+print(CheckNum('903,1 k'))
 
 
 
