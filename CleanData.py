@@ -2,14 +2,14 @@ import os
 import pandas as pd
 
 
-def CheckNum(strng) :
-    if strng.isnumeric() :
+def CheckNum(strn) :
+    if strn.isnumeric() :
         return True 
-    if 'k' in strng :
+    elif 'k' in strn :
         return CheckNum(strn.split('k')[0])
     else :
         try :
-            spl = strng.split(' ')
+            spl = strn.split(' ')
             if (spl[0]+spl[1]).isnumeric() :
                 return True
         except :
@@ -37,6 +37,7 @@ def ProcessData(Data) :
     df = pd.DataFrame(columns=['User','Tweet'])
 
 
+    ## Extract 'User'
     for i in range(len(Tada)) :
         if len(Tada[i])>1 and len(Tada[i][1])>1 :
             pada = pd.DataFrame([Tada[i][1]],columns=['User'])
@@ -45,6 +46,7 @@ def ProcessData(Data) :
             Tada[i]=Tada[i][4:]
         Tada[i].pop(-1)
 
+    ## eliminate En réponse à
     for a in Tada :
         if len(a)>0 and a[0]=='En réponse à ' :
             a.pop(0)
@@ -62,7 +64,7 @@ def ProcessData(Data) :
 
 
 
-print(CheckNum('903,1 k'))
+print(CheckNum('903,1 k')==True)
 
 
 
