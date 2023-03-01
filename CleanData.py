@@ -5,15 +5,19 @@ import pandas as pd
 def CheckNum(strn) :
     if strn.isnumeric() :
         return True 
-    elif 'k' in strn :
+    elif strn[-2:]==' k' :
         return CheckNum(strn.split('k')[0])
     else :
+        spl = strn.split(' ')
         try :
-            spl = strn.split(' ')
             if (spl[0]+spl[1]).isnumeric() :
                 return True
+            else :
+                if ',' in (spl[0]+spl[1]) :
+                    return True 
         except :
-            return False
+            return True 
+    return False 
 
 ## Load all data in folder and return it as a string
 def LoadData(Folder) :
@@ -42,29 +46,41 @@ def ProcessData(Data) :
         if len(Tada[i])>1 and len(Tada[i][1])>1 :
             pada = pd.DataFrame([Tada[i][1]],columns=['User'])
             df = pd.concat([df,pada])
-
-            Tada[i]=Tada[i][4:]
+            Tada[i]=[Tada[i][1]]+Tada[i][4:]
         Tada[i].pop(-1)
+        print(Tada[i][:3])
 
     ## eliminate En réponse à
-    for a in Tada :
-        if len(a)>0 and a[0]=='En réponse à ' :
-            a.pop(0)
-            a.pop(0)
-        print(a[-4:])
+    for i in range(len(Tada)) :
+        if len(Tada[i])>1 and Tada[i][1]=='En réponse à ' :
+            Tada[i].pop(1)
+            Tada[i].pop(1)
+        j=0
+        while j < len(Tada[i]) :
+            try :
+                if CheckNum(Tada[i][j]) :
+                    Tada[i].pop(j)
+                else :
+                    j+=1
+            except :
+                j+=1
+            
+        ##print(Tada[i])
 
     ## print(df.head(20))
 
-
-##Data = LoadData('26FEB')
-
+    return Tada 
 
 
-##ProcessData(Data)
+Data = LoadData('26FEB')
 
 
 
-print(CheckNum('903,1 k')==True)
+Tada = ProcessData(Data)
+
+
+
+
 
 
 
