@@ -85,7 +85,6 @@ def Scrap_Trend() :
     if Headless == True :
         options.headless = True
     driver_tw = webdriver.Firefox(options=options)
-    print(trend)
     while len(trend)>0 : 
         driver_tw.get(trend[0])
         time.sleep(3)
