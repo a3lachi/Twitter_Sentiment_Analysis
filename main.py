@@ -3,10 +3,19 @@ from CleanData import *
 
 
 def main():
-    # Start_Threads(Number of threads , Headless mode , Swipe Rate ,Folder to save data in ./data folder , Number of trends to scrap )
-    Start_Threads(2,False,5,"/Users/farawa/Twitter_Sentiment_Analysis/data/2MAR",4)
+
+
+    Folder = "/Users/farawa/Twitter_Sentiment_Analysis/data/2MAR"
+    nmbThreads = 2
+    headBool = True
+    swipeRate = 5
+    nmbTrends = 4
+
+
+    Start_Threads(nmbThreads,headBool,swipeRate,Folder,nmbTrends)
       
 
+    DataFrame = ProcessData(Folder)
 
 
 if __name__ == "__main__":

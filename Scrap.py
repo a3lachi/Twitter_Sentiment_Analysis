@@ -10,7 +10,7 @@ from selenium.webdriver.common.by import By
 
 def Get_Tw_Links() :
     options = Options()
-    ##options.headless = True
+    options.headless = True
     driver_trends = webdriver.Firefox(options=options)
     driver_trends.get('https://trends24.in/united-states/')
     time.sleep(1)
