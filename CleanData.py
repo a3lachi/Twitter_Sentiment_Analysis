@@ -86,35 +86,31 @@ def ProcessData(Data) :
             else :
                 j+=1
 
-
+    Data = []
+    c = 0
+    for a in Tada :
+        if len(a)>1 :
+            tweet = a[1]
+            for tw in a[2:] :
+                tweet+=tw 
+            Data.append([a[0],tweet])
     
 
-    return Tada 
+    df = pd.DataFrame(Data,columns=['User','Tweet'])
+    return df
 
 
 Data = LoadData('26FEB')
 
-linat = []
+DataFrame = ProcessData(Data)
 
-Tada = ProcessData(Data)
-Data = []
-c = 0
-for a in Tada :
-    if len(a)>1 :
-        tweet = a[1]
-        for tw in a[2:] :
-            tweet+=tw 
-        Data.append([a[0],tweet])
 
 print('')
-print('TOTAL: ',len(Tada))
-print('kter mjouj : ',c)
+print('TOTAL: ',len(DataFrame.index))
 
 
-df = pd.DataFrame(columns=['User','Tweet']) 
 
-for tweet in Data :
-    dff = pd.DataFrame(columns=['User','Tweet'])
+print(DataFrame.head(10))
 
 
 
