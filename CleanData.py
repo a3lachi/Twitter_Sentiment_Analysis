@@ -110,7 +110,7 @@ print('TOTAL: ',len(DataFrame.index))
 
 
 
-print(DataFrame.head(10))
+print(DataFrame.head(20))
 
 
 
