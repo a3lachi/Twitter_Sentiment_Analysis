@@ -23,7 +23,7 @@ def CheckNum(strn) :
 def LoadData(Folder) :
     Data = ''
     files = os.listdir('data/'+Folder)
-    for a in files[:10] :
+    for a in files :
         if '.txt' in a :
             f = open('./data/'+Folder+'/'+a,'r')
             ata = f.read()
@@ -38,15 +38,12 @@ def ProcessData(Data) :
     for a in Data :
         Tada.append(list(a.split('\n'))[1:])
 
-    df = pd.DataFrame(columns=['User','Tweet'])
-
 
     ## Extract 'User'
     for i in range(len(Tada)) :
         if len(Tada[i])>1 and len(Tada[i][1])>1 :
             Tada[i]=[Tada[i][1]]+Tada[i][4:]
         Tada[i].pop(-1)
-        ##print(Tada[i][:3])
 
     ## eliminate En réponse à and likes/retweet/shares/seens
     for i in range(len(Tada)) :
@@ -78,7 +75,13 @@ def ProcessData(Data) :
     for i in range(len(Tada)) :
         j=0
         while j < len(Tada[i]) :
-            if Tada[i][j]=='GIF' or Tada[i][j]=='ALT' :
+            if Tada[i][j] in ['GIF' , 'ALT' , 'Afficher cette discussion']  :
+                Tada[i].pop(j)
+            elif Tada[i][j]=='Citer le Tweet' :
+                Tada[i].pop(j)
+                Tada[i].pop(j)
+                Tada[i].pop(j)
+                Tada[i].pop(j)
                 Tada[i].pop(j)
             else :
                 j+=1
@@ -91,20 +94,27 @@ def ProcessData(Data) :
 
 Data = LoadData('26FEB')
 
-
+linat = []
 
 Tada = ProcessData(Data)
-
-
+Data = []
+c = 0
 for a in Tada :
-    try :
-        k = a.index('Citer le Tweet')
-        if k>-1 :
-            print(a[k+5:])
-    except :
-        pass
+    if len(a)>1 :
+        tweet = a[1]
+        for tw in a[2:] :
+            tweet+=tw 
+        Data.append([a[0],tweet])
+
+print('')
+print('TOTAL: ',len(Tada))
+print('kter mjouj : ',c)
 
 
+df = pd.DataFrame(columns=['User','Tweet']) 
+
+for tweet in Data :
+    dff = pd.DataFrame(columns=['User','Tweet'])
 
 
 
