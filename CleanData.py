@@ -104,15 +104,7 @@ def ProcessData(Folder) :
 
 
 
-DataFrame = ProcessData('/Users/farawa/Twitter_Sentiment_Analysis/data/2MAR')
 
-
-print('')
-print('TOTAL: ',len(DataFrame.index))
-
-
-
-print(DataFrame.head(20))
 
 
 

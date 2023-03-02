@@ -17,6 +17,14 @@ def main():
 
     DataFrame = ProcessData(Folder)
 
+    
+
+
+    print('TOTAL: ',len(DataFrame.index))
+
+    print('')
+
+    print(DataFrame.head(20))
 
 if __name__ == "__main__":
 
