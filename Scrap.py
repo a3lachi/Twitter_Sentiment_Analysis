@@ -67,7 +67,7 @@ def Write_Data(Folder, Data , trend) :
     fold = decon[-1]
     foldder = decon[0]
     for a in decon[1:-1]:
-        foldder+=a 
+        foldder+='/'+a 
     Dir = os.listdir(foldder)
     if fold not in Dir :
         os.mkdir(Folder)
@@ -111,7 +111,7 @@ def Scrap_Trend() :
         
         Write_Data(Folder, tws_list , trend)
 
-        print("Finished scraping trend : " + trend[1] )
+        print("Finished scraping trend : " , trend[1] )
 
         trend = Handle()
     
