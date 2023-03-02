@@ -130,19 +130,23 @@ def Start_Threads(numb,Hdls,Swp,Fldr,NumbTrends) :
 
     threads = []
     global tw_links
-    tw_links = Get_Tw_Links() 
-    tw_links = tw_links[:NumbTrends]
-    for i in range(numb):
-        t = threading.Thread(target=Scrap_Trend)
-        threads.append(t)
+    try :
+        tw_links = Get_Tw_Links() 
+        tw_links = tw_links[:NumbTrends]
+        for i in range(numb):
+            t = threading.Thread(target=Scrap_Trend)
+            threads.append(t)
 
-    for t in threads:
-        t.start()
+        for t in threads:
+            t.start()
 
-    for t in threads:
-        t.join()
+        for t in threads:
+            t.join()
 
-    print('Tweets scraped with success.')
+        print('Tweets scraped with success.')
+    except Exception as e :
+        print('An error occured launching th threads.')
+        print('The error says : ',e)
 
 
 

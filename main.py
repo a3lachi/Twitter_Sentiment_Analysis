@@ -5,7 +5,7 @@ from CleanData import *
 def main():
 
 
-    Folder = "/Users/farawa/Twitter_Sentiment_Analysis/data/2MAR"
+    Folder = "/Users/farawa/Twitter_Sentiment_Analysis/data/L2MAR"
     nmbThreads = 2
     headBool = True
     swipeRate = 3

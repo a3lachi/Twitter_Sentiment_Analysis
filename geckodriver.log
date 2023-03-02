@@ -32439,3 +32439,50 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/ds/1gc2g5316rn11p6rh4jrhjvc0000gn/T/rust_mozprofilevULc05/search.json.mozlz4", (void 0)))
 DevTools listening on ws://127.0.0.1:58378/devtools/browser/d9403d54-df35-4adb-babc-30a3e0793a83
 DevTools listening on ws://127.0.0.1:58379/devtools/browser/6dc22ff7-181f-4d51-a0c6-dd07b5adc80c
+1677784465637	geckodriver	INFO	Listening on 127.0.0.1:58530
+1677784466160	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "--remote-debugging-port"  ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/ds/1gc2g5316rn11p6rh4jrhjvc0000gn/T/rust_mozprofiles2858r"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1677784466542	Marionette	INFO	Marionette enabled
+1677784466602	Marionette	INFO	Listening on port 58536
+console.error: "Warning: unrecognized command line flag -remote-allow-hosts\n"
+Read port: 58536
+WebDriver BiDi listening on ws://127.0.0.1:58531
+1677784467134	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/ds/1gc2g5316rn11p6rh4jrhjvc0000gn/T/rust_mozprofiles2858r/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:58531/devtools/browser/c6858a0b-8987-40e1-b3cd-5b93be923e13
+1677784470546	Marionette	INFO	Stopped listening on port 58536
+1677784471248	geckodriver	INFO	Listening on 127.0.0.1:58569
+1677784471252	geckodriver	INFO	Listening on 127.0.0.1:58568
+1677784471763	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "--remote-debugging-port"  ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/ds/1gc2g5316rn11p6rh4jrhjvc0000gn/T/rust_mozprofile8u2yPZ"
+1677784471763	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "--remote-debugging-port"  ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/ds/1gc2g5316rn11p6rh4jrhjvc0000gn/T/rust_mozprofileLZisCK"
+*** You are running in headless mode.
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1677784472188	Marionette	INFO	Marionette enabled
+1677784472190	Marionette	INFO	Marionette enabled
+1677784472266	Marionette	INFO	Listening on port 58582
+Read port: 58582
+console.error: "Warning: unrecognized command line flag -remote-allow-hosts\n"
+1677784472317	Marionette	INFO	Listening on port 58584
+console.error: "Warning: unrecognized command line flag -remote-allow-hosts\n"
+Read port: 58584
+WebDriver BiDi listening on ws://127.0.0.1:58571
+1677784472624	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+WebDriver BiDi listening on ws://127.0.0.1:58570
+1677784472779	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/ds/1gc2g5316rn11p6rh4jrhjvc0000gn/T/rust_mozprofile8u2yPZ/search.json.mozlz4", (void 0)))
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/ds/1gc2g5316rn11p6rh4jrhjvc0000gn/T/rust_mozprofileLZisCK/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:58571/devtools/browser/fc2389ac-94e5-4661-9f81-4acef8b47f46
+DevTools listening on ws://127.0.0.1:58570/devtools/browser/6da60827-dac9-4aff-a994-bc38700fdf9e
+1677784519143	Marionette	INFO	Stopped listening on port 58584
+JavaScript error: https://abs.twimg.com/responsive-web/client-web/vendor.604c5ada.js, line 74: TypeError: can't access dead object
+1677784520342	Marionette	INFO	Stopped listening on port 58582
+JavaScript error: https://abs.twimg.com/responsive-web/client-web/vendor.604c5ada.js, line 74: TypeError: can't access dead object
