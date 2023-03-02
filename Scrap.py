@@ -4,21 +4,23 @@ from selenium.webdriver.firefox.options import Options
 import time 
 import threading
 import os 
+from selenium.webdriver.common.by import By
+
 
 
 def Get_Tw_Links() :
     options = Options()
-    options.headless = True
+    ##options.headless = True
     driver_trends = webdriver.Firefox(options=options)
     driver_trends.get('https://trends24.in/united-states/')
-
+    time.sleep(1)
     try :
-        driver_trends.find_element_by_xpath("/html/body/div[3]/div[2]/div[1]/div[2]/div[2]/button[1]").click()
+        driver_trends.find_element(By.XPATH,"/html/body/div[3]/div[2]/div[1]/div[2]/div[2]/button[1]").click()
     except : 
         pass
 
 
-    trends_list = driver_trends.find_element_by_class_name("trend-card__list")
+    trends_list = driver_trends.find_element(By.CLASS_NAME,"trend-card__list")
 
     twlinks = []
 
@@ -27,8 +29,8 @@ def Get_Tw_Links() :
     i = 1
     while (bol) :
         try :
-            trend = trends_list.find_element_by_xpath("./li["+str(i)+"]")
-            twlinks.append([str(trend.find_element_by_xpath("./a").get_attribute('href')) , trend.get_attribute('title')])
+            trend = trends_list.find_element(By.XPATH,"./li["+str(i)+"]")
+            twlinks.append([str(trend.find_element(By.XPATH ,"./a").get_attribute('href')) , trend.get_attribute('title')])
             i+=1
         except : 
             bol = False 
@@ -42,12 +44,12 @@ def Get_Tw_Links() :
 
 def Consent_Button(driver) :
     try :
-        driver.find_element_by_xpath("/html/body/div[1]/div/div/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div/div[2]/div/div[2]/div[2]/div[2]/div/span/span").click()
+        driver.find_element(By.XPATH,"/html/body/div[1]/div/div/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div/div[2]/div/div[2]/div[2]/div[2]/div/span/span").click()
     except : 
         pass
 
     try :
-        driver.find_element_by_xpath("/html/body/div[1]/div/div/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div/div[2]/div/div[2]/div[2]/div[2]").click()
+        driver.find_element(By.XPATH,"/html/body/div[1]/div/div/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div/div[2]/div/div[2]/div[2]/div[2]").click()
     except : 
         pass
 
@@ -78,12 +80,13 @@ def Scrap_Trend() :
     if Headless == True :
         options.headless = True
     driver_tw = webdriver.Firefox(options=options)
+    print(trend)
     while len(trend)>0 : 
         driver_tw.get(trend[0])
         time.sleep(3)
         Consent_Button(driver_tw)
 
-        tweets = driver_tw.find_element_by_xpath("/html/body/div[1]/div/div/div[2]/main/div/div/div/div[1]/div/div[3]/div/section/div/div")
+        tweets = driver_tw.find_element(By.XPATH,"/html/body/div[1]/div/div/div[2]/main/div/div/div/div[1]/div/div[3]/div/section/div/div")
 
         tws_list = ""
         i = 1
@@ -92,7 +95,7 @@ def Scrap_Trend() :
             Consent_Button(driver_tw)
             
             try :
-                tweetat = tweets.find_elements_by_xpath("./div")
+                tweetat = tweets.find_elements(By.XPATH,"./div")
                 for tweet in tweetat : 
                     tws_list += tweet.text + "\n------------------------------\n"
                 driver_tw.execute_script("window.scrollTo(0,document.body.scrollHeight)")
