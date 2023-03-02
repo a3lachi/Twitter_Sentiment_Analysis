@@ -32284,3 +32284,9 @@ DevTools listening on ws://127.0.0.1:56923/devtools/browser/66b3f6fe-84aa-42dc-9
 18  XUL                                 0x000000011c97947c workerlz4_decompress + 955356
 19  firefox-bin                         0x0000000106fe1fe5 firefox-bin + 8165
 20  dyld                                0x00007ff8160ed310 start + 2432
+1677781417238	Marionette	INFO	Stopped listening on port 56934
+JavaScript error: https://abs.twimg.com/responsive-web/client-web/vendor.604c5ada.js, line 74: TypeError: can't access dead object
+1677781421873	Marionette	INFO	Stopped listening on port 56932
+JavaScript error: https://abs.twimg.com/responsive-web/client-web/vendor.604c5ada.js, line 74: TypeError: can't access dead object
+1677781434896	Marionette	INFO	Stopped listening on port 56502
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
