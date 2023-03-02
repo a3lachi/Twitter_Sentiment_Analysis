@@ -22,16 +22,18 @@ def CheckNum(strn) :
 ## Load all data in folder and return it as a string
 def LoadData(Folder) :
     Data = ''
-    files = os.listdir('data/'+Folder)
+    files = os.listdir(Folder)
     for a in files :
         if '.txt' in a :
-            f = open('./data/'+Folder+'/'+a,'r')
+            f = open(Folder+'/'+a,'r')
             ata = f.read()
             Data += ata
             f.close()
     return Data
 
-def ProcessData(Data) :
+def ProcessData(Folder) :
+
+    Data = LoadData(Folder)
     Data = Data.split("------------------------------")
     Tada = []
 
@@ -100,9 +102,9 @@ def ProcessData(Data) :
     return df
 
 
-Data = LoadData('26FEB')
 
-DataFrame = ProcessData(Data)
+
+DataFrame = ProcessData('/Users/farawa/Twitter_Sentiment_Analysis/data/2MAR')
 
 
 print('')

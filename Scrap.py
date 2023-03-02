@@ -65,8 +65,8 @@ def Handle() :
 def Write_Data(Folder, Data , trend) :
     Dir = os.listdir('data')
     if Folder not in Dir :
-        os.mkdir('./data/'+Folder)
-    f = open("./data/"+Folder+"/trend_"+trend[1]+".txt","a+")
+        os.mkdir(Folder)
+    f = open(Folder+"/trend_"+trend[1]+".txt","a+")
     f.write(Data)
     f.close()
 
