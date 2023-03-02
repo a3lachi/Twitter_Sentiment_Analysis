@@ -63,8 +63,10 @@ def Handle() :
     return trend 
 
 def Write_Data(Folder, Data , trend) :
-    Dir = os.listdir('data')
-    if Folder not in Dir :
+    decon = Folder.split('/')
+    fold = decon[-1]
+    foldder = 
+    if fold not in Dir :
         os.mkdir(Folder)
     f = open(Folder+"/trend_"+trend[1]+".txt","a+")
     f.write(Data)

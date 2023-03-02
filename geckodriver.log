@@ -32290,3 +32290,46 @@ JavaScript error: https://abs.twimg.com/responsive-web/client-web/vendor.604c5ad
 JavaScript error: https://abs.twimg.com/responsive-web/client-web/vendor.604c5ada.js, line 74: TypeError: can't access dead object
 1677781434896	Marionette	INFO	Stopped listening on port 56502
 console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1677783955258	geckodriver	INFO	Listening on 127.0.0.1:57856
+1677783955788	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "--remote-debugging-port"  ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/ds/1gc2g5316rn11p6rh4jrhjvc0000gn/T/rust_mozprofileJsyiPy"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1677783956155	Marionette	INFO	Marionette enabled
+1677783956210	Marionette	INFO	Listening on port 57862
+console.error: "Warning: unrecognized command line flag -remote-allow-hosts\n"
+Read port: 57862
+WebDriver BiDi listening on ws://127.0.0.1:57857
+1677783956714	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/ds/1gc2g5316rn11p6rh4jrhjvc0000gn/T/rust_mozprofileJsyiPy/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:57857/devtools/browser/4c4b3434-da25-415c-a1cc-4ba151c9870b
+1677783960114	Marionette	INFO	Stopped listening on port 57862
+1677783960826	geckodriver	INFO	Listening on 127.0.0.1:57903
+1677783961343	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "--remote-debugging-port"  ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/ds/1gc2g5316rn11p6rh4jrhjvc0000gn/T/rust_mozprofilevEXHPj"
+*** You are running in headless mode.
+1677783961434	geckodriver	INFO	Listening on 127.0.0.1:57902
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1677783961721	Marionette	INFO	Marionette enabled
+1677783961818	Marionette	INFO	Listening on port 57913
+Read port: 57913
+console.error: "Warning: unrecognized command line flag -remote-allow-hosts\n"
+1677783961940	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "--remote-debugging-port"  ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/ds/1gc2g5316rn11p6rh4jrhjvc0000gn/T/rust_mozprofilelTth56"
+*** You are running in headless mode.
+WebDriver BiDi listening on ws://127.0.0.1:57905
+1677783962084	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1677783962285	Marionette	INFO	Marionette enabled
+1677783962406	Marionette	INFO	Listening on port 57918
+Read port: 57918
+console.error: "Warning: unrecognized command line flag -remote-allow-hosts\n"
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/ds/1gc2g5316rn11p6rh4jrhjvc0000gn/T/rust_mozprofilevEXHPj/search.json.mozlz4", (void 0)))
+WebDriver BiDi listening on ws://127.0.0.1:57904
+1677783962723	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:57905/devtools/browser/2b2735b3-6dcf-4442-b5d2-1a49414de434
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/ds/1gc2g5316rn11p6rh4jrhjvc0000gn/T/rust_mozprofilelTth56/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:57904/devtools/browser/dbfcd7c8-62b4-48b1-ab31-314760d0b19f
