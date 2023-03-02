@@ -65,7 +65,10 @@ def Handle() :
 def Write_Data(Folder, Data , trend) :
     decon = Folder.split('/')
     fold = decon[-1]
-    foldder = 
+    foldder = decon[0]
+    for a in decon[1:-1]:
+        foldder+=a 
+    Dir = os.listdir(foldder)
     if fold not in Dir :
         os.mkdir(Folder)
     f = open(Folder+"/trend_"+trend[1]+".txt","a+")
