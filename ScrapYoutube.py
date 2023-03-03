@@ -18,3 +18,4 @@ driver_trending = webdriver.Firefox(options=options)
 
 driver_trending.get('https://www.youtube.com/feed/trending')
 
+videos = driver_trending.find_element(By.ID,"contents")
