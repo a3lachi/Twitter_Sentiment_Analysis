@@ -40,9 +40,10 @@ def GetTrendingVideos() :
 	
 def Handle() :
     global Yt_data
+    global iki 
     try :
-        video = Yt_data[0]
-        Yt_data = Yt_data[1:]
+        video = Yt_data[iki]['Link']
+        iki+=1
     except :
         video = []
     return video 
@@ -50,6 +51,8 @@ def Handle() :
 
 def ScrapComments() :
 	global Yt_data
+	global iki
+	iki = 0
 	video = Handle()
 	options = Options()
 	options.headless = True
@@ -79,7 +82,7 @@ def ThreadYoutube(NumbVidz)
         Yt_data = GetTrendingVideos()
         Yt_data = Yt_data[:NumbVidz]
         for i in range(numb):
-            t = threading.Thread(target=Scrap_Trend)
+            t = threading.Thread(target=ScrapComments)
             threads.append(t)
 
         for t in threads:
