@@ -5,7 +5,7 @@ import time
 import threading
 import os 
 from selenium.webdriver.common.by import By
-
+import pandas as pd
 
 
 
@@ -21,6 +21,9 @@ driver_trending.get('https://www.youtube.com/feed/trending')
 videos = driver_trending.find_element(By.ID,"contents")
 
 vidz = videos.find_elements(By.XPATH,"//div[@id='contents']//div[@id='grid-container']//a[@id='video-title']")
+
+
+df = pd.DataFrame(Data,)
 
 
 for video in vidz :
