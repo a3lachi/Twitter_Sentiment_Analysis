@@ -34,13 +34,19 @@ def GetTrendingVideos() :
 	df = pd.DataFrame(Data,columns=['Video','Link'])
 
 	print('Successfully scraped trending videos links.')
+	driver_trending.quit()
 
 	return df
 	
 
 
 
-def ScrapComments(driver) :
+def ScrapComments(url) :
+	options = Options()
+	options.headless = True
+	driver = webdriver.Firefox(options=options)
+	driver.get(url)
+
 	comz = []
 	comments = driver.find_element(By.ID,"comments")
 	coms = comments.find_elements(By.XPATH,"//div[@id='comment-content']//yt-formatted-string[@id='content-text']")
@@ -52,5 +58,6 @@ def ScrapComments(driver) :
 
 
 df = GetTrendingVideos()
+
 
 
