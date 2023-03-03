@@ -52,7 +52,7 @@ def Handle() :
     global Yt_data
     global iki 
     try :
-        video = Yt_data[iki]['Link']
+        video = Yt_data.iloc[iki]['Link']
         iki+=1
     except :
         video = []

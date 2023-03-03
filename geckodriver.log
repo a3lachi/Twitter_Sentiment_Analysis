@@ -34435,3 +34435,43 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/ds/1gc2g5316rn11p6rh4jrhjvc0000gn/T/rust_mozprofilezNZe1d/search.json.mozlz4", (void 0)))
 DevTools listening on ws://127.0.0.1:59988/devtools/browser/8dce1b3c-f41e-4ee1-859a-3893e7dde036
 DevTools listening on ws://127.0.0.1:59987/devtools/browser/95a79dde-6518-4c8d-9e38-d81b97eb8bbf
+1677808634907	geckodriver	INFO	Listening on 127.0.0.1:60146
+1677808635441	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "--remote-debugging-port"  ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/ds/1gc2g5316rn11p6rh4jrhjvc0000gn/T/rust_mozprofilesPQKj6"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1677808635811	Marionette	INFO	Marionette enabled
+1677808635868	Marionette	INFO	Listening on port 60154
+console.error: "Warning: unrecognized command line flag -remote-allow-hosts\n"
+Read port: 60154
+WebDriver BiDi listening on ws://127.0.0.1:60147
+1677808636365	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/ds/1gc2g5316rn11p6rh4jrhjvc0000gn/T/rust_mozprofilesPQKj6/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:60147/devtools/browser/63288b8d-2e7b-49a0-97c0-3cb9c4a9acb5
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://consent.youtube.com."
+1677808641669	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+[2023-03-03T01:57:22Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T01:57:22Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T01:57:22Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T01:57:22Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T01:57:22Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T01:57:22Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T01:57:22Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T01:57:22Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+1677808646825	Marionette	INFO	Stopped listening on port 60154
+JavaScript error: https://www.youtube.com/feed/trending?cbrd=1&themeRefresh=1, line 12: TypeError: can't access dead object
+1677808907957	geckodriver	INFO	Listening on 127.0.0.1:60262
+1677808908471	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "--remote-debugging-port"  ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/ds/1gc2g5316rn11p6rh4jrhjvc0000gn/T/rust_mozprofileVNMZKu"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1677808908824	Marionette	INFO	Marionette enabled
+1677808908889	Marionette	INFO	Listening on port 60270
+console.error: "Warning: unrecognized command line flag -remote-allow-hosts\n"
+Read port: 60270
+WebDriver BiDi listening on ws://127.0.0.1:60263
+1677808909427	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/ds/1gc2g5316rn11p6rh4jrhjvc0000gn/T/rust_mozprofileVNMZKu/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:60263/devtools/browser/eceeea0c-ba09-42cd-8c02-a006d6130792
