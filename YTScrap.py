@@ -18,11 +18,20 @@ def Bitina(driver) :
         pass
 
 
+def Bitina2(driver) :
+    time.sleep(2)
+    try :
+        for i in range(10) : 
+            driver.find_element(By.XPATH,"/html/body/ytd-app/ytd-consent-bump-v2-lightbox/tp-yt-paper-dialog/div[4]/div[2]/div[6]/div[1]/ytd-button-renderer[2]/yt-button-shape/button").click()
+            time.sleep(0.4)
+    except :
+        pass
+
 
 def GetTrendingVideos() :
 
     options = Options()
-    options.headless = True
+    options.add_argument('-headless')
     driver_trending = webdriver.Firefox(options=options)
 
     driver_trending.get('https://www.youtube.com/feed/trending')
@@ -65,7 +74,7 @@ def ScrapComments() :
     iki = 0
     video = Handle()
     options = Options()
-    options.headless = True
+    ##options.add_argument('-headless')
     driver = webdriver.Firefox(options=options)
 
     while (video) :
@@ -73,7 +82,9 @@ def ScrapComments() :
         driver.get(video)
 
         Bitina(driver)
+        Bitina2(driver)
 
+        time.sleep(3)
         comz = []
         comments = driver.find_element(By.ID,"comments")
         coms = comments.find_elements(By.XPATH,"//div[@id='comment-content']//yt-formatted-string[@id='content-text']")
