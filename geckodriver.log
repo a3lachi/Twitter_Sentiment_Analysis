@@ -32982,3 +32982,89 @@ getMutations@resource://devtools/client/fronts/walker.js:313:10
 24  XUL                                 0x000000011757947c workerlz4_decompress + 955356
 25  firefox-bin                         0x0000000101c70fe5 firefox-bin + 8165
 26  dyld                                0x00007ff8160ed310 start + 2432
+1   HIToolbox                           0x00007ff81feba726 _ZN15MenuBarInstance22EnsureAutoShowObserverEv + 102
+2   HIToolbox                           0x00007ff81fe83638 _ZL17BroadcastInternaljPvh + 167
+3   SkyLight                            0x00007ff81b12823d _ZN12_GLOBAL__N_123notify_datagram_handlerEj15CGSDatagramTypePvmS1_ + 1030
+4   SkyLight                            0x00007ff81b43b05a _ZN21CGSDatagramReadStream26dispatchMainQueueDatagramsEv + 202
+5   SkyLight                            0x00007ff81b43af81 ___ZN21CGSDatagramReadStream15mainQueueWakeupEv_block_invoke + 18
+6   libdispatch.dylib                   0x00007ff81629f7fb _dispatch_call_block_and_release + 12
+7   libdispatch.dylib                   0x00007ff8162a0a44 _dispatch_client_callout + 8
+8   libdispatch.dylib                   0x00007ff8162ad7b9 _dispatch_main_queue_drain + 952
+9   libdispatch.dylib                   0x00007ff8162ad3f3 _dispatch_main_queue_callback_4CF + 31
+10  CoreFoundation                      0x00007ff81653a5f0 __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__ + 9
+11  CoreFoundation                      0x00007ff8164fab70 __CFRunLoopRun + 2454
+12  CoreFoundation                      0x00007ff8164f9b60 CFRunLoopRunSpecific + 560
+13  HIToolbox                           0x00007ff81fe47766 RunCurrentEventLoopInMode + 292
+14  HIToolbox                           0x00007ff81fe47576 ReceiveNextEventCommon + 679
+15  HIToolbox                           0x00007ff81fe472b3 _BlockUntilNextEventMatchingListInModeWithFilter + 70
+16  AppKit                              0x00007ff81964a2f3 _DPSNextEvent + 909
+17  AppKit                              0x00007ff819649174 -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:] + 1219
+18  XUL                                 0x00000001136e2fce _ZN14nsXPTCStubBase7Stub249Ev + 12293550
+19  AppKit                              0x00007ff81963b7b7 -[NSApplication run] + 586
+20  XUL                                 0x00000001136e3e91 _ZN14nsXPTCStubBase7Stub249Ev + 12297329
+21  XUL                                 0x00000001174f504c workerlz4_decompress + 413612
+22  XUL                                 0x0000000113b76459 workerlz4_maxCompressedSize + 446073
+23  XUL                                 0x000000011757905c workerlz4_decompress + 954300
+24  XUL                                 0x000000011757947c workerlz4_decompress + 955356
+25  firefox-bin                         0x0000000101c70fe5 firefox-bin + 8165
+26  dyld                                0x00007ff8160ed310 start + 2432
+1   HIToolbox                           0x00007ff81fe470c2 _ZN15MenuBarInstance22RemoveAutoShowObserverEv + 30
+2   HIToolbox                           0x00007ff81fe5e7e3 SetMenuBarObscured + 115
+3   HIToolbox                           0x00007ff81fe6529e _ZN13HIApplication11FrontUILostEv + 34
+4   HIToolbox                           0x00007ff81fe5e622 _ZN13HIApplication15HandleActivatedEP14OpaqueEventRefhP15OpaqueWindowPtrh + 508
+5   HIToolbox                           0x00007ff81fe58950 _ZN13HIApplication13EventObserverEjP14OpaqueEventRefPv + 182
+6   HIToolbox                           0x00007ff81fe20bd2 _NotifyEventLoopObservers + 153
+7   HIToolbox                           0x00007ff81fe583e6 AcquireEventFromQueue + 494
+8   HIToolbox                           0x00007ff81fe475a4 ReceiveNextEventCommon + 725
+9   HIToolbox                           0x00007ff81fe472b3 _BlockUntilNextEventMatchingListInModeWithFilter + 70
+10  AppKit                              0x00007ff81964a2f3 _DPSNextEvent + 909
+11  AppKit                              0x00007ff819649174 -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:] + 1219
+12  XUL                                 0x00000001136e2fce _ZN14nsXPTCStubBase7Stub249Ev + 12293550
+13  AppKit                              0x00007ff81963b7b7 -[NSApplication run] + 586
+14  XUL                                 0x00000001136e3e91 _ZN14nsXPTCStubBase7Stub249Ev + 12297329
+15  XUL                                 0x00000001174f504c workerlz4_decompress + 413612
+16  XUL                                 0x0000000113b76459 workerlz4_maxCompressedSize + 446073
+17  XUL                                 0x000000011757905c workerlz4_decompress + 954300
+18  XUL                                 0x000000011757947c workerlz4_decompress + 955356
+19  firefox-bin                         0x0000000101c70fe5 firefox-bin + 8165
+20  dyld                                0x00007ff8160ed310 start + 2432
+1   HIToolbox                           0x00007ff81feba726 _ZN15MenuBarInstance22EnsureAutoShowObserverEv + 102
+2   HIToolbox                           0x00007ff81fe5e852 SetMenuBarObscured + 226
+3   HIToolbox                           0x00007ff81fe5e4ca _ZN13HIApplication15HandleActivatedEP14OpaqueEventRefhP15OpaqueWindowPtrh + 164
+4   HIToolbox                           0x00007ff81fe58996 _ZN13HIApplication13EventObserverEjP14OpaqueEventRefPv + 252
+5   HIToolbox                           0x00007ff81fe20bd2 _NotifyEventLoopObservers + 153
+6   AppKit                              0x00007ff819838f73 -[NSWindow(NSEventRouting) _handleMouseDownEvent:isDelayedEvent:] + 3212
+7   AppKit                              0x00007ff8197af58e -[NSWindow(NSEventRouting) _reallySendEvent:isDelayedEvent:] + 2595
+8   AppKit                              0x00007ff8197ae94f -[NSWindow(NSEventRouting) sendEvent:] + 345
+9   XUL                                 0x000000011685b4b5 mozilla_set_coreaudio_notification_runloop_if_needed + 6400437
+10  AppKit                              0x00007ff8197accbe -[NSApplication(NSEvent) sendEvent:] + 358
+11  XUL                                 0x00000001136e2f2c _ZN14nsXPTCStubBase7Stub249Ev + 12293388
+12  AppKit                              0x00007ff819a6b665 -[NSApplication _handleEvent:] + 65
+13  AppKit                              0x00007ff81963b7dc -[NSApplication run] + 623
+14  XUL                                 0x00000001136e3e91 _ZN14nsXPTCStubBase7Stub249Ev + 12297329
+15  XUL                                 0x00000001174f504c workerlz4_decompress + 413612
+16  XUL                                 0x0000000113b76459 workerlz4_maxCompressedSize + 446073
+17  XUL                                 0x000000011757905c workerlz4_decompress + 954300
+18  XUL                                 0x000000011757947c workerlz4_decompress + 955356
+19  firefox-bin                         0x0000000101c70fe5 firefox-bin + 8165
+20  dyld                                0x00007ff8160ed310 start + 2432
+1   HIToolbox                           0x00007ff81fe470c2 _ZN15MenuBarInstance22RemoveAutoShowObserverEv + 30
+2   HIToolbox                           0x00007ff81fe5e7e3 SetMenuBarObscured + 115
+3   HIToolbox                           0x00007ff81fe6529e _ZN13HIApplication11FrontUILostEv + 34
+4   HIToolbox                           0x00007ff81fe5e622 _ZN13HIApplication15HandleActivatedEP14OpaqueEventRefhP15OpaqueWindowPtrh + 508
+5   HIToolbox                           0x00007ff81fe58950 _ZN13HIApplication13EventObserverEjP14OpaqueEventRefPv + 182
+6   HIToolbox                           0x00007ff81fe20bd2 _NotifyEventLoopObservers + 153
+7   HIToolbox                           0x00007ff81fe583e6 AcquireEventFromQueue + 494
+8   HIToolbox                           0x00007ff81fe475a4 ReceiveNextEventCommon + 725
+9   HIToolbox                           0x00007ff81fe472b3 _BlockUntilNextEventMatchingListInModeWithFilter + 70
+10  AppKit                              0x00007ff81964a2f3 _DPSNextEvent + 909
+11  AppKit                              0x00007ff819649174 -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:] + 1219
+12  XUL                                 0x00000001136e2fce _ZN14nsXPTCStubBase7Stub249Ev + 12293550
+13  AppKit                              0x00007ff81963b7b7 -[NSApplication run] + 586
+14  XUL                                 0x00000001136e3e91 _ZN14nsXPTCStubBase7Stub249Ev + 12297329
+15  XUL                                 0x00000001174f504c workerlz4_decompress + 413612
+16  XUL                                 0x0000000113b76459 workerlz4_maxCompressedSize + 446073
+17  XUL                                 0x000000011757905c workerlz4_decompress + 954300
+18  XUL                                 0x000000011757947c workerlz4_decompress + 955356
+19  firefox-bin                         0x0000000101c70fe5 firefox-bin + 8165
+20  dyld                                0x00007ff8160ed310 start + 2432
