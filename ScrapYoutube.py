@@ -68,6 +68,7 @@ def ScrapComments() :
 			comz.append(a.text)
 
 		## insert comz in df 
+		df.loc[df['Link'] == Video]
 
 		video = Handle()
 
