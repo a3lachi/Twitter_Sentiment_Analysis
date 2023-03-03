@@ -86,6 +86,9 @@ def ScrapComments() :
 
         time.sleep(3)
         comz = []
+        for j in range(10) :
+            driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
+            time.sleep(1)
         comments = driver.find_element(By.ID,"comments")
         coms = comments.find_elements(By.XPATH,"//div[@id='comment-content']//yt-formatted-string[@id='content-text']")
         for a in coms :

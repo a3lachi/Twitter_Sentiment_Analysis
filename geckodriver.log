@@ -34919,3 +34919,246 @@ JavaScript warning: https://pagead2.googlesyndication.com/bg/9sSoBG9D25FhvYLg3_i
 [2023-03-03T02:06:49Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
 [2023-03-03T02:06:49Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
 JavaScript warning: https://pagead2.googlesyndication.com/bg/9sSoBG9D25FhvYLg3_iwWJ49bM2Qm57VxEM1rvvqfaE.js line 2 > eval line 2158 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[2023-03-03T02:06:54Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:06:54Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:06:54Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:06:54Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+JavaScript warning: https://pagead2.googlesyndication.com/bg/9sSoBG9D25FhvYLg3_iwWJ49bM2Qm57VxEM1rvvqfaE.js line 2 > eval line 4575 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/9sSoBG9D25FhvYLg3_iwWJ49bM2Qm57VxEM1rvvqfaE.js line 2 > eval line 1419 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/9sSoBG9D25FhvYLg3_iwWJ49bM2Qm57VxEM1rvvqfaE.js line 2 > eval line 7218 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1   HIToolbox                           0x00007ff81fe470c2 _ZN15MenuBarInstance22RemoveAutoShowObserverEv + 30
+2   HIToolbox                           0x00007ff81fe5e7e3 SetMenuBarObscured + 115
+3   HIToolbox                           0x00007ff81fe6529e _ZN13HIApplication11FrontUILostEv + 34
+4   HIToolbox                           0x00007ff81fe5e622 _ZN13HIApplication15HandleActivatedEP14OpaqueEventRefhP15OpaqueWindowPtrh + 508
+5   HIToolbox                           0x00007ff81fe58950 _ZN13HIApplication13EventObserverEjP14OpaqueEventRefPv + 182
+6   HIToolbox                           0x00007ff81fe20bd2 _NotifyEventLoopObservers + 153
+7   HIToolbox                           0x00007ff81fe583e6 AcquireEventFromQueue + 494
+8   HIToolbox                           0x00007ff81fe475a4 ReceiveNextEventCommon + 725
+9   HIToolbox                           0x00007ff81fe472b3 _BlockUntilNextEventMatchingListInModeWithFilter + 70
+10  AppKit                              0x00007ff81964a2f3 _DPSNextEvent + 909
+11  AppKit                              0x00007ff819649174 -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:] + 1219
+12  XUL                                 0x00000001175e2fce _ZN14nsXPTCStubBase7Stub249Ev + 12293550
+13  AppKit                              0x00007ff81963b7b7 -[NSApplication run] + 586
+14  XUL                                 0x00000001175e3e91 _ZN14nsXPTCStubBase7Stub249Ev + 12297329
+15  XUL                                 0x000000011b3f504c workerlz4_decompress + 413612
+16  XUL                                 0x0000000117a76459 workerlz4_maxCompressedSize + 446073
+17  XUL                                 0x000000011b47905c workerlz4_decompress + 954300
+18  XUL                                 0x000000011b47947c workerlz4_decompress + 955356
+19  firefox-bin                         0x0000000105b55fe5 firefox-bin + 8165
+20  dyld                                0x00007ff8160ed310 start + 2432
+1   HIToolbox                           0x00007ff81feba726 _ZN15MenuBarInstance22EnsureAutoShowObserverEv + 102
+2   HIToolbox                           0x00007ff81fe5e852 SetMenuBarObscured + 226
+3   HIToolbox                           0x00007ff81fe5e4ca _ZN13HIApplication15HandleActivatedEP14OpaqueEventRefhP15OpaqueWindowPtrh + 164
+4   HIToolbox                           0x00007ff81fe58996 _ZN13HIApplication13EventObserverEjP14OpaqueEventRefPv + 252
+5   HIToolbox                           0x00007ff81fe20bd2 _NotifyEventLoopObservers + 153
+6   HIToolbox                           0x00007ff81fe583e6 AcquireEventFromQueue + 494
+7   HIToolbox                           0x00007ff81fe475a4 ReceiveNextEventCommon + 725
+8   HIToolbox                           0x00007ff81fe472b3 _BlockUntilNextEventMatchingListInModeWithFilter + 70
+9   AppKit                              0x00007ff81964a2f3 _DPSNextEvent + 909
+10  AppKit                              0x00007ff819649174 -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:] + 1219
+11  XUL                                 0x00000001175e2fce _ZN14nsXPTCStubBase7Stub249Ev + 12293550
+12  AppKit                              0x00007ff81963b7b7 -[NSApplication run] + 586
+13  XUL                                 0x00000001175e3e91 _ZN14nsXPTCStubBase7Stub249Ev + 12297329
+14  XUL                                 0x000000011b3f504c workerlz4_decompress + 413612
+15  XUL                                 0x0000000117a76459 workerlz4_maxCompressedSize + 446073
+16  XUL                                 0x000000011b47905c workerlz4_decompress + 954300
+17  XUL                                 0x000000011b47947c workerlz4_decompress + 955356
+18  firefox-bin                         0x0000000105b55fe5 firefox-bin + 8165
+19  dyld                                0x00007ff8160ed310 start + 2432
+1   HIToolbox                           0x00007ff81fe470c2 _ZN15MenuBarInstance22RemoveAutoShowObserverEv + 30
+2   HIToolbox                           0x00007ff81fe5e7e3 SetMenuBarObscured + 115
+3   HIToolbox                           0x00007ff81fe6529e _ZN13HIApplication11FrontUILostEv + 34
+4   HIToolbox                           0x00007ff81fe5e622 _ZN13HIApplication15HandleActivatedEP14OpaqueEventRefhP15OpaqueWindowPtrh + 508
+5   HIToolbox                           0x00007ff81fe58950 _ZN13HIApplication13EventObserverEjP14OpaqueEventRefPv + 182
+6   HIToolbox                           0x00007ff81fe20bd2 _NotifyEventLoopObservers + 153
+7   HIToolbox                           0x00007ff81fe583e6 AcquireEventFromQueue + 494
+8   HIToolbox                           0x00007ff81fe475a4 ReceiveNextEventCommon + 725
+9   HIToolbox                           0x00007ff81fe472b3 _BlockUntilNextEventMatchingListInModeWithFilter + 70
+10  AppKit                              0x00007ff81964a2f3 _DPSNextEvent + 909
+11  AppKit                              0x00007ff819649174 -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:] + 1219
+12  XUL                                 0x00000001175e2fce _ZN14nsXPTCStubBase7Stub249Ev + 12293550
+13  AppKit                              0x00007ff81963b7b7 -[NSApplication run] + 586
+14  XUL                                 0x00000001175e3e91 _ZN14nsXPTCStubBase7Stub249Ev + 12297329
+15  XUL                                 0x000000011b3f504c workerlz4_decompress + 413612
+16  XUL                                 0x0000000117a76459 workerlz4_maxCompressedSize + 446073
+17  XUL                                 0x000000011b47905c workerlz4_decompress + 954300
+18  XUL                                 0x000000011b47947c workerlz4_decompress + 955356
+19  firefox-bin                         0x0000000105b55fe5 firefox-bin + 8165
+20  dyld                                0x00007ff8160ed310 start + 2432
+1677809361867	geckodriver	INFO	Listening on 127.0.0.1:61141
+1677809361875	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "--remote-debugging-port"  ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/ds/1gc2g5316rn11p6rh4jrhjvc0000gn/T/rust_mozprofileTXV63i"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1677809362215	Marionette	INFO	Marionette enabled
+1677809362269	Marionette	INFO	Listening on port 61147
+Read port: 61147
+console.error: "Warning: unrecognized command line flag -remote-allow-hosts\n"
+WebDriver BiDi listening on ws://127.0.0.1:61142
+1677809362742	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/ds/1gc2g5316rn11p6rh4jrhjvc0000gn/T/rust_mozprofileTXV63i/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:61142/devtools/browser/315179d0-5484-4df4-9184-b95db8cd7a48
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://consent.youtube.com."
+1677809368211	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+[2023-03-03T02:09:28Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:09:28Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:09:28Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:09:28Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:09:29Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:09:29Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:09:29Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:09:29Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+1677809372906	Marionette	INFO	Stopped listening on port 61147
+JavaScript error: https://www.youtube.com/feed/trending?cbrd=1&themeRefresh=1, line 12: TypeError: can't access dead object
+1677809373619	geckodriver	INFO	Listening on 127.0.0.1:61204
+1677809373621	geckodriver	INFO	Listening on 127.0.0.1:61202
+1677809374138	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "61205" "--r ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/ds/1gc2g5316rn11p6rh4jrhjvc0000gn/T/rust_mozprofileZAOnsE"
+1677809374138	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "61203" "--r ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/ds/1gc2g5316rn11p6rh4jrhjvc0000gn/T/rust_mozprofilefH2Mvh"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1677809374565	Marionette	INFO	Marionette enabled
+1   HIToolbox                           0x00007ff81feba726 _ZN15MenuBarInstance22EnsureAutoShowObserverEv + 102
+2   HIToolbox                           0x00007ff81feba2b8 _ZN15MenuBarInstance14EnableAutoShowEv + 52
+3   HIToolbox                           0x00007ff81fe5e908 SetMenuBarObscured + 408
+4   HIToolbox                           0x00007ff81fe5e4ca _ZN13HIApplication15HandleActivatedEP14OpaqueEventRefhP15OpaqueWindowPtrh + 164
+5   HIToolbox                           0x00007ff81fe58996 _ZN13HIApplication13EventObserverEjP14OpaqueEventRefPv + 252
+6   HIToolbox                           0x00007ff81fe20bd2 _NotifyEventLoopObservers + 153
+7   HIToolbox                           0x00007ff81fe583e6 AcquireEventFromQueue + 494
+8   HIToolbox                           0x00007ff81fe473ec ReceiveNextEventCommon + 285
+9   HIToolbox                           0x00007ff81fe472b3 _BlockUntilNextEventMatchingListInModeWithFilter + 70
+10  AppKit                              0x00007ff81964a2f3 _DPSNextEvent + 909
+11  AppKit                              0x00007ff819649174 -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:] + 1219
+12  XUL                                 0x00000001133e2fce _ZN14nsXPTCStubBase7Stub249Ev + 12293550
+13  XUL                                 0x00000001133e3d1a _ZN14nsXPTCStubBase7Stub249Ev + 12296954
+14  XUL                                 0x00000001133e44bc _ZN14nsXPTCStubBase7Stub249Ev + 12298908
+15  XUL                                 0x000000011281210b NS_NewLocalFileWithFSRef + 256523
+16  XUL                                 0x0000000112818457 NS_NewLocalFileWithFSRef + 281943
+17  XUL                                 0x0000000112297d8e NS_InvokeByIndex + 142
+18  XUL                                 0x0000000112b26196 _ZN14nsXPTCStubBase7Stub249Ev + 3131254
+19  XUL                                 0x0000000112b28181 _ZN14nsXPTCStubBase7Stub249Ev + 3139425
+20  XUL                                 0x00000001138bdf0d XRE_GetBootstrap + 288541
+21  XUL                                 0x00000001138c966a XRE_GetBootstrap + 335482
+22  XUL                                 0x0000000113cea44e XRE_GetBootstrap + 4664414
+23  ???                                 0x00000c5a781d4d05 0x0 + 13582701776133
+24  ???                                 0x00000c5a781de4cc 0x0 + 13582701814988
+25  ???                                 0x00000c5a781d44ee 0x0 + 13582701774062
+26  XUL                                 0x0000000113cccccf XRE_GetBootstrap + 4543711
+27  XUL                                 0x00000001138b12f3 XRE_GetBootstrap + 236291
+28  XUL                                 0x00000001138c966a XRE_GetBootstrap + 335482
+29  XUL                                 0x000000011397d344 XRE_GetBootstrap + 1071956
+30  XUL                                 0x00000001138bdf0d XRE_GetBootstrap + 288541
+31  XUL                                 0x00000001138c966a XRE_GetBootstrap + 335482
+32  XUL                                 0x0000000113933395 XRE_GetBootstrap + 768933
+33  XUL                                 0x0000000112b206f9 _ZN14nsXPTCStubBase7Stub249Ev + 3108057
+34  XUL                                 0x0000000112829b6a _ZN14nsXPTCStubBase7Stub249Ev + 330
+35  XUL                                 0x0000000112828abb NS_NewLocalFileWithFSRef + 349115
+36  XUL                                 0x000000011727da98 workerlz4_decompress + 973304
+37  XUL                                 0x00000001138760c4 workerlz4_maxCompressedSize + 445156
+38  XUL                                 0x000000011727905c workerlz4_decompress + 954300
+39  XUL                                 0x000000011727947c workerlz4_decompress + 955356
+40  firefox-bin                         0x0000000101927fe5 firefox-bin + 8165
+41  dyld                                0x00007ff8160ed310 start + 2432
+1677809374655	Marionette	INFO	Marionette enabled
+1677809374680	Marionette	INFO	Listening on port 61218
+console.error: "Warning: unrecognized command line flag -remote-allow-hosts\n"
+1677809374749	Marionette	INFO	Listening on port 61219
+Read port: 61219
+Read port: 61218
+console.error: "Warning: unrecognized command line flag -remote-allow-hosts\n"
+WebDriver BiDi listening on ws://127.0.0.1:61203
+1677809374993	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+WebDriver BiDi listening on ws://127.0.0.1:61205
+1677809375100	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/ds/1gc2g5316rn11p6rh4jrhjvc0000gn/T/rust_mozprofilefH2Mvh/search.json.mozlz4", (void 0)))
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/ds/1gc2g5316rn11p6rh4jrhjvc0000gn/T/rust_mozprofileZAOnsE/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:61203/devtools/browser/a266b24e-3c48-43b8-8521-0135e645e03a
+DevTools listening on ws://127.0.0.1:61205/devtools/browser/b91b1fb9-d21d-4fb7-abdc-2de2f07dae01
+JavaScript warning: https://pagead2.googlesyndication.com/bg/9sSoBG9D25FhvYLg3_iwWJ49bM2Qm57VxEM1rvvqfaE.js line 2 > eval line 633 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[2023-03-03T02:09:40Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:09:40Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:09:40Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:09:40Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+JavaScript warning: https://pagead2.googlesyndication.com/bg/9sSoBG9D25FhvYLg3_iwWJ49bM2Qm57VxEM1rvvqfaE.js line 2 > eval line 3142 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[2023-03-03T02:09:40Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:09:40Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:09:40Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:09:40Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:09:46Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:09:46Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:09:46Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:09:46Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+JavaScript warning: https://pagead2.googlesyndication.com/bg/9sSoBG9D25FhvYLg3_iwWJ49bM2Qm57VxEM1rvvqfaE.js line 2 > eval line 5642 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[2023-03-03T02:09:46Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:09:46Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:09:46Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:09:46Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+JavaScript warning: https://pagead2.googlesyndication.com/bg/9sSoBG9D25FhvYLg3_iwWJ49bM2Qm57VxEM1rvvqfaE.js line 2 > eval line 7095 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[2023-03-03T02:09:53Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:09:53Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:09:53Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:09:53Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+JavaScript warning: https://pagead2.googlesyndication.com/bg/9sSoBG9D25FhvYLg3_iwWJ49bM2Qm57VxEM1rvvqfaE.js line 2 > eval line 4229 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/9sSoBG9D25FhvYLg3_iwWJ49bM2Qm57VxEM1rvvqfaE.js line 2 > eval line 3424 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/9sSoBG9D25FhvYLg3_iwWJ49bM2Qm57VxEM1rvvqfaE.js line 2 > eval line 5591 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1   HIToolbox                           0x00007ff81fe470c2 _ZN15MenuBarInstance22RemoveAutoShowObserverEv + 30
+2   HIToolbox                           0x00007ff81fe5e7e3 SetMenuBarObscured + 115
+3   HIToolbox                           0x00007ff81fe6529e _ZN13HIApplication11FrontUILostEv + 34
+4   HIToolbox                           0x00007ff81fe5e622 _ZN13HIApplication15HandleActivatedEP14OpaqueEventRefhP15OpaqueWindowPtrh + 508
+5   HIToolbox                           0x00007ff81fe58950 _ZN13HIApplication13EventObserverEjP14OpaqueEventRefPv + 182
+6   HIToolbox                           0x00007ff81fe20bd2 _NotifyEventLoopObservers + 153
+7   HIToolbox                           0x00007ff81fe583e6 AcquireEventFromQueue + 494
+8   HIToolbox                           0x00007ff81fe475a4 ReceiveNextEventCommon + 725
+9   HIToolbox                           0x00007ff81fe472b3 _BlockUntilNextEventMatchingListInModeWithFilter + 70
+10  AppKit                              0x00007ff81964a2f3 _DPSNextEvent + 909
+11  AppKit                              0x00007ff819649174 -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:] + 1219
+12  XUL                                 0x00000001133e2fce _ZN14nsXPTCStubBase7Stub249Ev + 12293550
+13  AppKit                              0x00007ff81963b7b7 -[NSApplication run] + 586
+14  XUL                                 0x00000001133e3e91 _ZN14nsXPTCStubBase7Stub249Ev + 12297329
+15  XUL                                 0x00000001171f504c workerlz4_decompress + 413612
+16  XUL                                 0x0000000113876459 workerlz4_maxCompressedSize + 446073
+17  XUL                                 0x000000011727905c workerlz4_decompress + 954300
+18  XUL                                 0x000000011727947c workerlz4_decompress + 955356
+19  firefox-bin                         0x0000000101927fe5 firefox-bin + 8165
+20  dyld                                0x00007ff8160ed310 start + 2432
+1   HIToolbox                           0x00007ff81feba726 _ZN15MenuBarInstance22EnsureAutoShowObserverEv + 102
+2   HIToolbox                           0x00007ff81fe5e852 SetMenuBarObscured + 226
+3   HIToolbox                           0x00007ff81fe5e4ca _ZN13HIApplication15HandleActivatedEP14OpaqueEventRefhP15OpaqueWindowPtrh + 164
+4   HIToolbox                           0x00007ff81fe58996 _ZN13HIApplication13EventObserverEjP14OpaqueEventRefPv + 252
+5   HIToolbox                           0x00007ff81fe20bd2 _NotifyEventLoopObservers + 153
+6   HIToolbox                           0x00007ff81fe583e6 AcquireEventFromQueue + 494
+7   HIToolbox                           0x00007ff81fe473ec ReceiveNextEventCommon + 285
+8   HIToolbox                           0x00007ff81fe472b3 _BlockUntilNextEventMatchingListInModeWithFilter + 70
+9   AppKit                              0x00007ff81964a2f3 _DPSNextEvent + 909
+10  AppKit                              0x00007ff819649174 -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:] + 1219
+11  XUL                                 0x00000001133e2fce _ZN14nsXPTCStubBase7Stub249Ev + 12293550
+12  AppKit                              0x00007ff81963b7b7 -[NSApplication run] + 586
+13  XUL                                 0x00000001133e3e91 _ZN14nsXPTCStubBase7Stub249Ev + 12297329
+14  XUL                                 0x00000001171f504c workerlz4_decompress + 413612
+15  XUL                                 0x0000000113876459 workerlz4_maxCompressedSize + 446073
+16  XUL                                 0x000000011727905c workerlz4_decompress + 954300
+17  XUL                                 0x000000011727947c workerlz4_decompress + 955356
+18  firefox-bin                         0x0000000101927fe5 firefox-bin + 8165
+19  dyld                                0x00007ff8160ed310 start + 2432
+1   HIToolbox                           0x00007ff81fe470c2 _ZN15MenuBarInstance22RemoveAutoShowObserverEv + 30
+2   HIToolbox                           0x00007ff81fe5e7e3 SetMenuBarObscured + 115
+3   HIToolbox                           0x00007ff81fe6529e _ZN13HIApplication11FrontUILostEv + 34
+4   HIToolbox                           0x00007ff81fe5e622 _ZN13HIApplication15HandleActivatedEP14OpaqueEventRefhP15OpaqueWindowPtrh + 508
+5   HIToolbox                           0x00007ff81fe58950 _ZN13HIApplication13EventObserverEjP14OpaqueEventRefPv + 182
+6   HIToolbox                           0x00007ff81fe20bd2 _NotifyEventLoopObservers + 153
+7   HIToolbox                           0x00007ff81fe583e6 AcquireEventFromQueue + 494
+8   HIToolbox                           0x00007ff81fe475a4 ReceiveNextEventCommon + 725
+9   HIToolbox                           0x00007ff81fe472b3 _BlockUntilNextEventMatchingListInModeWithFilter + 70
+10  AppKit                              0x00007ff81964a2f3 _DPSNextEvent + 909
+11  AppKit                              0x00007ff819649174 -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:] + 1219
+12  XUL                                 0x00000001133e2fce _ZN14nsXPTCStubBase7Stub249Ev + 12293550
+13  AppKit                              0x00007ff81963b7b7 -[NSApplication run] + 586
+14  XUL                                 0x00000001133e3e91 _ZN14nsXPTCStubBase7Stub249Ev + 12297329
+15  XUL                                 0x00000001171f504c workerlz4_decompress + 413612
+16  XUL                                 0x0000000113876459 workerlz4_maxCompressedSize + 446073
+17  XUL                                 0x000000011727905c workerlz4_decompress + 954300
+18  XUL                                 0x000000011727947c workerlz4_decompress + 955356
+19  firefox-bin                         0x0000000101927fe5 firefox-bin + 8165
+20  dyld                                0x00007ff8160ed310 start + 2432
