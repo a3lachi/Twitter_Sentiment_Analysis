@@ -36042,3 +36042,14 @@ JavaScript warning: https://pagead2.googlesyndication.com/bg/9sSoBG9D25FhvYLg3_i
 JavaScript warning: https://pagead2.googlesyndication.com/bg/9sSoBG9D25FhvYLg3_iwWJ49bM2Qm57VxEM1rvvqfaE.js line 2 > eval line 4729 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
 JavaScript warning: https://pagead2.googlesyndication.com/bg/9sSoBG9D25FhvYLg3_iwWJ49bM2Qm57VxEM1rvvqfaE.js line 2 > eval line 2895 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
 JavaScript warning: https://pagead2.googlesyndication.com/bg/9sSoBG9D25FhvYLg3_iwWJ49bM2Qm57VxEM1rvvqfaE.js line 2 > eval line 3858 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1677810145265	Marionette	INFO	Stopped listening on port 62370
+JavaScript error: https://www.youtube.com/watch?v=866EDPageH8, line 12: TypeError: can't access dead object
+JavaScript error: https://www.youtube.com/watch?v=866EDPageH8, line 12: TypeError: can't access dead object
+JavaScript error: https://www.youtube.com/watch?v=866EDPageH8, line 12: TypeError: can't access dead object
+1677810146103	Marionette	INFO	Stopped listening on port 62372
+JavaScript error: https://www.youtube.com/watch?v=RD2MrMT1gMk, line 12: TypeError: can't access dead object
+JavaScript error: https://www.youtube.com/watch?v=RD2MrMT1gMk, line 12: TypeError: can't access dead object
+JavaScript error: https://www.youtube.com/watch?v=RD2MrMT1gMk, line 12: TypeError: can't access dead object
+JavaScript error: https://www.youtube.com/watch?v=RD2MrMT1gMk, line 12: TypeError: can't access dead object
+JavaScript error: https://www.youtube.com/watch?v=RD2MrMT1gMk, line 12: TypeError: can't access dead object
+JavaScript error: https://www.youtube.com/watch?v=RD2MrMT1gMk, line 12: TypeError: can't access dead object
