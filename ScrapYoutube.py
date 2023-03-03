@@ -27,11 +27,11 @@ def GetTrendingVideos() :
 	Data = []
 
 	for video in vidz :
-		Data.append([video.get_attribute('title'),video.get_attribute('href')])
+		Data.append([video.get_attribute('title'),video.get_attribute('href'),''])
 
 
 
-	df = pd.DataFrame(Data,columns=['Video','Link'])
+	df = pd.DataFrame(Data,columns=['Video','Link','Comments'])
 
 	print('Successfully scraped trending videos links.')
 	driver_trending.quit()
@@ -39,38 +39,45 @@ def GetTrendingVideos() :
 	return df
 	
 def Handle() :
-    global Yt_links
+    global Yt_data
     try :
-        video = Yt_links[0]
-        Yt_links = Yt_links[1:]
+        video = Yt_data[0]
+        Yt_data = Yt_data[1:]
     except :
         video = []
     return video 
 
 
-def ScrapComments(url) :
+def ScrapComments() :
+	global Yt_data
 	video = Handle()
 	options = Options()
 	options.headless = True
 	driver = webdriver.Firefox(options=options)
-	driver.get(url)
 
-	comz = []
-	comments = driver.find_element(By.ID,"comments")
-	coms = comments.find_elements(By.XPATH,"//div[@id='comment-content']//yt-formatted-string[@id='content-text']")
-	for a in coms :
-		comz.append(a.text)
+	while (video) :
+		driver.get(video)
 
-	return comz 
+		comz = []
+		comments = driver.find_element(By.ID,"comments")
+		coms = comments.find_elements(By.XPATH,"//div[@id='comment-content']//yt-formatted-string[@id='content-text']")
+		for a in coms :
+			comz.append(a.text)
+
+		## insert comz in df 
+
+		video = Handle()
+
+
 
 
 
 def ThreadYoutube(NumbVidz)
 	threads = []
-    global Yt_links
+    global Yt_data 
     try :
-        Yt_links = GetTrendingVideos()
-        Yt_links = tw_links[:NumbVidz]
+        Yt_data = GetTrendingVideos()
+        Yt_data = Yt_data[:NumbVidz]
         for i in range(numb):
             t = threading.Thread(target=Scrap_Trend)
             threads.append(t)
@@ -81,7 +88,7 @@ def ThreadYoutube(NumbVidz)
         for t in threads:
             t.join()
 
-        print('Tweets scraped with success.')
+        print('Comments scraped with success.')
     except Exception as e :
         print('An error occured launching th threads.')
         print('The error says : ',e)
