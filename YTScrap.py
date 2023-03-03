@@ -6,38 +6,37 @@ import threading
 import os 
 from selenium.webdriver.common.by import By
 import pandas as pd
-
-
+import time 
 
 
 
 def GetTrendingVideos() :
 
-	options = Options()
-	options.headless = True
-	driver_trending = webdriver.Firefox(options=options)
+    options = Options()
+    ##options.headless = True
+    driver_trending = webdriver.Firefox(options=options)
 
-	driver_trending.get('https://www.youtube.com/feed/trending')
+    driver_trending.get('https://www.youtube.com/feed/trending')
 
-	videos = driver_trending.find_element(By.ID,"contents")
+    videos = driver_trending.find_element(By.ID,"contents")
 
-	vidz = videos.find_elements(By.XPATH,"//div[@id='contents']//div[@id='grid-container']//a[@id='video-title']")
-
-
-	Data = []
-
-	for video in vidz :
-		Data.append([video.get_attribute('title'),video.get_attribute('href'),''])
+    vidz = videos.find_elements(By.XPATH,"//div[@id='contents']//div[@id='grid-container']//a[@id='video-title']")
 
 
+    Data = []
 
-	df = pd.DataFrame(Data,columns=['Video','Link','Comments'])
+    for video in vidz :
+    	Data.append([video.get_attribute('title'),video.get_attribute('href'),''])
 
-	print('Successfully scraped trending videos links.')
-	driver_trending.quit()
 
-	return df
-	
+
+    df = pd.DataFrame(Data,columns=['Video','Link','Comments'])
+
+    print('Successfully scraped trending videos links.')
+    driver_trending.quit()
+
+    return df
+
 def Handle() :
     global Yt_data
     global iki 
@@ -48,31 +47,40 @@ def Handle() :
         video = []
     return video 
 
-
+def Bitina(driver) :
+    try :
+        for i in range(10) : 
+            driver.find_element(By.XPATH,"/html/body/c-wiz/div/div/div/div[2]/div[1]/div[3]/div[1]/form[2]/div/div/button").click()
+            time.sleep(0.4)
+    except :
+        pass
 def ScrapComments() :
-	global Yt_data
-	global iki
-	iki = 0
-	video = Handle()
-	options = Options()
-	##options.headless = True
-	driver = webdriver.Firefox(options=options)
+    global Yt_data
+    global iki
+    iki = 0
+    video = Handle()
+    options = Options()
+    ##options.headless = True
+    driver = webdriver.Firefox(options=options)
 
-	while (video) :
-		driver.get(video)
+    while (video) :
+        driver.get(video)
+        time.sleep(2)
 
-		comz = []
-		comments = driver.find_element(By.ID,"comments")
-		coms = comments.find_elements(By.XPATH,"//div[@id='comment-content']//yt-formatted-string[@id='content-text']")
-		for a in coms :
-			comz.append(a.text)
+        Bitina(driver)
 
-		## insert comz in df 
-		##df.loc[df['Link'] == Video]
+        comz = []
+        comments = driver.find_element(By.ID,"comments")
+        coms = comments.find_elements(By.XPATH,"//div[@id='comment-content']//yt-formatted-string[@id='content-text']")
+        for a in coms :
+            comz.append(a.text)
 
-		print('HA CHHAL MN COMM ',len(comz))
+        ## insert comz in df 
+        ##df.loc[df['Link'] == Video]
 
-		video = Handle()
+        print('HA CHHAL MN COMM ',len(comz))
+
+        video = Handle()
 
 
 
