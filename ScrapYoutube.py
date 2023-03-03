@@ -12,6 +12,7 @@ import pandas as pd
 
 
 def GetTrendingVideos() :
+	
 	options = Options()
 	##options.headless = True
 	driver_trending = webdriver.Firefox(options=options)
@@ -23,7 +24,6 @@ def GetTrendingVideos() :
 	vidz = videos.find_elements(By.XPATH,"//div[@id='contents']//div[@id='grid-container']//a[@id='video-title']")
 
 
-
 	Data = []
 
 	for video in vidz :
@@ -31,10 +31,8 @@ def GetTrendingVideos() :
 
 
 
-
-
-
 	df = pd.DataFrame(Data,columns=['Video','Link'])
 
-
 	print(df.head(10))
+	return df
+	
