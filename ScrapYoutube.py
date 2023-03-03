@@ -21,3 +21,7 @@ driver_trending.get('https://www.youtube.com/feed/trending')
 videos = driver_trending.find_element(By.ID,"contents")
 
 vidz = videos.find_elements(By.XPATH,"//div[@id='contents']//div[@id='grid-container']//a[@id='video-title']")
+
+
+for video in vidz :
+	a.get_attribute('title')
