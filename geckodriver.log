@@ -33825,3 +33825,69 @@ console.warn: LoginRecipes: "Falling back to a synchronous message for: https://
 18  firefox-bin                         0x000000010f56dfe5 firefox-bin + 8165
 19  dyld                                0x00007ff8160ed310 start + 2432
 1677807648781	Marionette	INFO	Stopped listening on port 57913
+1677807866468	geckodriver	INFO	Listening on 127.0.0.1:59517
+1677807866987	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "--remote-debugging-port"  ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/ds/1gc2g5316rn11p6rh4jrhjvc0000gn/T/rust_mozprofileczI38B"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1677807867392	Marionette	INFO	Marionette enabled
+1677807867529	Marionette	INFO	Listening on port 59523
+console.error: "Warning: unrecognized command line flag -remote-allow-hosts\n"
+Read port: 59523
+WebDriver BiDi listening on ws://127.0.0.1:59518
+1677807867796	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/ds/1gc2g5316rn11p6rh4jrhjvc0000gn/T/rust_mozprofileczI38B/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:59518/devtools/browser/1d0100bb-75e0-4284-85fd-d8c0a42580a6
+1677807939966	geckodriver	INFO	Listening on 127.0.0.1:59571
+1677807940482	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "59572" "--r ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/ds/1gc2g5316rn11p6rh4jrhjvc0000gn/T/rust_mozprofileePmSCj"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1677807941119	Marionette	INFO	Marionette enabled
+1677807941205	Marionette	INFO	Listening on port 59577
+console.error: "Warning: unrecognized command line flag -remote-allow-hosts\n"
+Read port: 59577
+WebDriver BiDi listening on ws://127.0.0.1:59572
+1677807941587	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/ds/1gc2g5316rn11p6rh4jrhjvc0000gn/T/rust_mozprofileePmSCj/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:59572/devtools/browser/a0c45b89-bcff-4338-98cf-dc7525802876
+1   HIToolbox                           0x00007ff81feba726 _ZN15MenuBarInstance22EnsureAutoShowObserverEv + 102
+2   HIToolbox                           0x00007ff81fe5e852 SetMenuBarObscured + 226
+3   HIToolbox                           0x00007ff81fe5e4ca _ZN13HIApplication15HandleActivatedEP14OpaqueEventRefhP15OpaqueWindowPtrh + 164
+4   HIToolbox                           0x00007ff81fe58996 _ZN13HIApplication13EventObserverEjP14OpaqueEventRefPv + 252
+5   HIToolbox                           0x00007ff81fe20bd2 _NotifyEventLoopObservers + 153
+6   HIToolbox                           0x00007ff81fe583e6 AcquireEventFromQueue + 494
+7   HIToolbox                           0x00007ff81fe473ec ReceiveNextEventCommon + 285
+8   HIToolbox                           0x00007ff81fe472b3 _BlockUntilNextEventMatchingListInModeWithFilter + 70
+9   AppKit                              0x00007ff81964a2f3 _DPSNextEvent + 909
+10  AppKit                              0x00007ff819649174 -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:] + 1219
+11  XUL                                 0x00000001146e2fce _ZN14nsXPTCStubBase7Stub249Ev + 12293550
+12  AppKit                              0x00007ff81963b7b7 -[NSApplication run] + 586
+13  XUL                                 0x00000001146e3e91 _ZN14nsXPTCStubBase7Stub249Ev + 12297329
+14  XUL                                 0x00000001184f504c workerlz4_decompress + 413612
+15  XUL                                 0x0000000114b76459 workerlz4_maxCompressedSize + 446073
+16  XUL                                 0x000000011857905c workerlz4_decompress + 954300
+17  XUL                                 0x000000011857947c workerlz4_decompress + 955356
+18  firefox-bin                         0x0000000102ca4fe5 firefox-bin + 8165
+19  dyld                                0x00007ff8160ed310 start + 2432
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://consent.youtube.com."
+1   HIToolbox                           0x00007ff81fe470c2 _ZN15MenuBarInstance22RemoveAutoShowObserverEv + 30
+2   HIToolbox                           0x00007ff81fe5e7e3 SetMenuBarObscured + 115
+3   HIToolbox                           0x00007ff81fe6529e _ZN13HIApplication11FrontUILostEv + 34
+4   HIToolbox                           0x00007ff81fe5e622 _ZN13HIApplication15HandleActivatedEP14OpaqueEventRefhP15OpaqueWindowPtrh + 508
+5   HIToolbox                           0x00007ff81fe58950 _ZN13HIApplication13EventObserverEjP14OpaqueEventRefPv + 182
+6   HIToolbox                           0x00007ff81fe20bd2 _NotifyEventLoopObservers + 153
+7   HIToolbox                           0x00007ff81fe583e6 AcquireEventFromQueue + 494
+8   HIToolbox                           0x00007ff81fe475a4 ReceiveNextEventCommon + 725
+9   HIToolbox                           0x00007ff81fe472b3 _BlockUntilNextEventMatchingListInModeWithFilter + 70
+10  AppKit                              0x00007ff81964a2f3 _DPSNextEvent + 909
+11  AppKit                              0x00007ff819649174 -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:] + 1219
+12  XUL                                 0x00000001146e2fce _ZN14nsXPTCStubBase7Stub249Ev + 12293550
+13  AppKit                              0x00007ff81963b7b7 -[NSApplication run] + 586
+14  XUL                                 0x00000001146e3e91 _ZN14nsXPTCStubBase7Stub249Ev + 12297329
+15  XUL                                 0x00000001184f504c workerlz4_decompress + 413612
+16  XUL                                 0x0000000114b76459 workerlz4_maxCompressedSize + 446073
+17  XUL                                 0x000000011857905c workerlz4_decompress + 954300
+18  XUL                                 0x000000011857947c workerlz4_decompress + 955356
+19  firefox-bin                         0x0000000102ca4fe5 firefox-bin + 8165
+20  dyld                                0x00007ff8160ed310 start + 2432
