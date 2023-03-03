@@ -70,8 +70,7 @@ def Handle() :
 
 def ScrapComments() :
     global Yt_data
-    global iki
-    iki = 0
+    
     video = Handle()
     options = Options()
     ##options.add_argument('-headless')
@@ -100,6 +99,7 @@ def ScrapComments() :
         print('HA CHHAL MN COMM ',len(comz))
 
         video = Handle()
+    driver.quit()
 
 
 
@@ -125,6 +125,12 @@ def ThreadYoutube(NumbVidz) :
     except Exception as e :
         print('An error occured launching th threads.')
         print('The error says : ',e)
+
+
+
+global iki
+
+iki = 0
 
 
 
