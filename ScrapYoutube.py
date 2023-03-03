@@ -38,10 +38,18 @@ def GetTrendingVideos() :
 
 	return df
 	
-
+def Handle() :
+    global Yt_links
+    try :
+        video = Yt_links[0]
+        Yt_links = Yt_links[1:]
+    except :
+        video = []
+    return video 
 
 
 def ScrapComments(url) :
+	video = Handle()
 	options = Options()
 	options.headless = True
 	driver = webdriver.Firefox(options=options)
@@ -57,7 +65,26 @@ def ScrapComments(url) :
 
 
 
-df = GetTrendingVideos()
+def ThreadYoutube(NumbVidz)
+	threads = []
+    global Yt_links
+    try :
+        Yt_links = GetTrendingVideos()
+        Yt_links = tw_links[:NumbVidz]
+        for i in range(numb):
+            t = threading.Thread(target=Scrap_Trend)
+            threads.append(t)
+
+        for t in threads:
+            t.start()
+
+        for t in threads:
+            t.join()
+
+        print('Tweets scraped with success.')
+    except Exception as e :
+        print('An error occured launching th threads.')
+        print('The error says : ',e)
 
 
 
