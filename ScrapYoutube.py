@@ -12,9 +12,9 @@ from selenium.webdriver.common.by import By
 
 
 
+options = Options()
+##options.headless = True
+driver_trending = webdriver.Firefox(options=options)
 
-driver_trending = webdriver.Firefox()
-
-
-driver_trending
+driver_trending.get('https://www.youtube.com/feed/trending')
 

@@ -32590,3 +32590,31 @@ console.warn: LoginRecipes: "Falling back to a synchronous message for: https://
 18  XUL                                 0x000000011757947c workerlz4_decompress + 955356
 19  firefox-bin                         0x0000000101c70fe5 firefox-bin + 8165
 20  dyld                                0x00007ff8160ed310 start + 2432
+1   HIToolbox                           0x00007ff81feba726 _ZN15MenuBarInstance22EnsureAutoShowObserverEv + 102
+2   HIToolbox                           0x00007ff81fe5e852 SetMenuBarObscured + 226
+3   HIToolbox                           0x00007ff81fe5e4ca _ZN13HIApplication15HandleActivatedEP14OpaqueEventRefhP15OpaqueWindowPtrh + 164
+4   HIToolbox                           0x00007ff81fe58996 _ZN13HIApplication13EventObserverEjP14OpaqueEventRefPv + 252
+5   HIToolbox                           0x00007ff81fe20bd2 _NotifyEventLoopObservers + 153
+6   AppKit                              0x00007ff819838f73 -[NSWindow(NSEventRouting) _handleMouseDownEvent:isDelayedEvent:] + 3212
+7   AppKit                              0x00007ff8197af58e -[NSWindow(NSEventRouting) _reallySendEvent:isDelayedEvent:] + 2595
+8   AppKit                              0x00007ff8197ae94f -[NSWindow(NSEventRouting) sendEvent:] + 345
+9   XUL                                 0x000000011685b4b5 mozilla_set_coreaudio_notification_runloop_if_needed + 6400437
+10  AppKit                              0x00007ff8197accbe -[NSApplication(NSEvent) sendEvent:] + 358
+11  XUL                                 0x00000001136e2f2c _ZN14nsXPTCStubBase7Stub249Ev + 12293388
+12  AppKit                              0x00007ff819a6b665 -[NSApplication _handleEvent:] + 65
+13  AppKit                              0x00007ff81963b7dc -[NSApplication run] + 623
+14  XUL                                 0x00000001136e3e91 _ZN14nsXPTCStubBase7Stub249Ev + 12297329
+15  XUL                                 0x00000001174f504c workerlz4_decompress + 413612
+16  XUL                                 0x0000000113b76459 workerlz4_maxCompressedSize + 446073
+17  XUL                                 0x000000011757905c workerlz4_decompress + 954300
+18  XUL                                 0x000000011757947c workerlz4_decompress + 955356
+19  firefox-bin                         0x0000000101c70fe5 firefox-bin + 8165
+20  dyld                                0x00007ff8160ed310 start + 2432
+console.error: (new TypeError("parent is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 67))
+TypeError: parent is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:67:24
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+getMutations@resource://devtools/client/fronts/walker.js:313:10
+
