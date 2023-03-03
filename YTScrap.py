@@ -8,15 +8,26 @@ from selenium.webdriver.common.by import By
 import pandas as pd
 import time 
 
+def Bitina(driver) :
+    time.sleep(2)
+    try :
+        for i in range(10) : 
+            driver.find_element(By.XPATH,"/html/body/c-wiz/div/div/div/div[2]/div[1]/div[3]/div[1]/form[2]/div/div/button").click()
+            time.sleep(0.4)
+    except :
+        pass
+
 
 
 def GetTrendingVideos() :
 
     options = Options()
-    ##options.headless = True
+    options.headless = True
     driver_trending = webdriver.Firefox(options=options)
 
     driver_trending.get('https://www.youtube.com/feed/trending')
+
+    Bitina(driver_trending)
 
     videos = driver_trending.find_element(By.ID,"contents")
 
@@ -47,25 +58,19 @@ def Handle() :
         video = []
     return video 
 
-def Bitina(driver) :
-    try :
-        for i in range(10) : 
-            driver.find_element(By.XPATH,"/html/body/c-wiz/div/div/div/div[2]/div[1]/div[3]/div[1]/form[2]/div/div/button").click()
-            time.sleep(0.4)
-    except :
-        pass
+
 def ScrapComments() :
     global Yt_data
     global iki
     iki = 0
     video = Handle()
     options = Options()
-    ##options.headless = True
+    options.headless = True
     driver = webdriver.Firefox(options=options)
 
     while (video) :
+        print('Scrapping the video : ',video)
         driver.get(video)
-        time.sleep(2)
 
         Bitina(driver)
 
@@ -92,7 +97,7 @@ def ThreadYoutube(NumbVidz) :
     try :
         Yt_data = GetTrendingVideos()
         Yt_data = Yt_data[:NumbVidz]
-        for i in range(numb):
+        for i in range(NumbVidz):
             t = threading.Thread(target=ScrapComments)
             threads.append(t)
 
