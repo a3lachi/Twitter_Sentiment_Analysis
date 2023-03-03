@@ -35562,3 +35562,483 @@ JavaScript warning: https://pagead2.googlesyndication.com/bg/9sSoBG9D25FhvYLg3_i
 [2023-03-03T02:16:37Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
 JavaScript warning: https://pagead2.googlesyndication.com/bg/9sSoBG9D25FhvYLg3_iwWJ49bM2Qm57VxEM1rvvqfaE.js line 2 > eval line 909 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
 JavaScript warning: https://pagead2.googlesyndication.com/bg/9sSoBG9D25FhvYLg3_iwWJ49bM2Qm57VxEM1rvvqfaE.js line 2 > eval line 3547 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1   HIToolbox                           0x00007ff81feba726 _ZN15MenuBarInstance22EnsureAutoShowObserverEv + 102
+2   HIToolbox                           0x00007ff81fe5e852 SetMenuBarObscured + 226
+3   HIToolbox                           0x00007ff81fe5e4ca _ZN13HIApplication15HandleActivatedEP14OpaqueEventRefhP15OpaqueWindowPtrh + 164
+4   HIToolbox                           0x00007ff81fe58996 _ZN13HIApplication13EventObserverEjP14OpaqueEventRefPv + 252
+5   HIToolbox                           0x00007ff81fe20bd2 _NotifyEventLoopObservers + 153
+6   HIToolbox                           0x00007ff81fe583e6 AcquireEventFromQueue + 494
+7   HIToolbox                           0x00007ff81fe473ec ReceiveNextEventCommon + 285
+8   HIToolbox                           0x00007ff81fe472b3 _BlockUntilNextEventMatchingListInModeWithFilter + 70
+9   AppKit                              0x00007ff81964a2f3 _DPSNextEvent + 909
+10  AppKit                              0x00007ff819649174 -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:] + 1219
+11  XUL                                 0x00000001157e2fce _ZN14nsXPTCStubBase7Stub249Ev + 12293550
+12  AppKit                              0x00007ff81963b7b7 -[NSApplication run] + 586
+13  XUL                                 0x00000001157e3e91 _ZN14nsXPTCStubBase7Stub249Ev + 12297329
+14  XUL                                 0x00000001195f504c workerlz4_decompress + 413612
+15  XUL                                 0x0000000115c76459 workerlz4_maxCompressedSize + 446073
+16  XUL                                 0x000000011967905c workerlz4_decompress + 954300
+17  XUL                                 0x000000011967947c workerlz4_decompress + 955356
+18  firefox-bin                         0x0000000103ce7fe5 firefox-bin + 8165
+19  dyld                                0x00007ff8160ed310 start + 2432
+1   HIToolbox                           0x00007ff81fe470c2 _ZN15MenuBarInstance22RemoveAutoShowObserverEv + 30
+2   HIToolbox                           0x00007ff81fe5e7e3 SetMenuBarObscured + 115
+3   HIToolbox                           0x00007ff81fe6529e _ZN13HIApplication11FrontUILostEv + 34
+4   HIToolbox                           0x00007ff81fe5e622 _ZN13HIApplication15HandleActivatedEP14OpaqueEventRefhP15OpaqueWindowPtrh + 508
+5   HIToolbox                           0x00007ff81fe58950 _ZN13HIApplication13EventObserverEjP14OpaqueEventRefPv + 182
+6   HIToolbox                           0x00007ff81fe20bd2 _NotifyEventLoopObservers + 153
+7   HIToolbox                           0x00007ff81fe583e6 AcquireEventFromQueue + 494
+8   HIToolbox                           0x00007ff81fe475a4 ReceiveNextEventCommon + 725
+9   HIToolbox                           0x00007ff81fe472b3 _BlockUntilNextEventMatchingListInModeWithFilter + 70
+10  AppKit                              0x00007ff81964a2f3 _DPSNextEvent + 909
+11  AppKit                              0x00007ff819649174 -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:] + 1219
+12  XUL                                 0x00000001157e2fce _ZN14nsXPTCStubBase7Stub249Ev + 12293550
+13  AppKit                              0x00007ff81963b7b7 -[NSApplication run] + 586
+14  XUL                                 0x00000001157e3e91 _ZN14nsXPTCStubBase7Stub249Ev + 12297329
+15  XUL                                 0x00000001195f504c workerlz4_decompress + 413612
+16  XUL                                 0x0000000115c76459 workerlz4_maxCompressedSize + 446073
+17  XUL                                 0x000000011967905c workerlz4_decompress + 954300
+18  XUL                                 0x000000011967947c workerlz4_decompress + 955356
+19  firefox-bin                         0x0000000103ce7fe5 firefox-bin + 8165
+20  dyld                                0x00007ff8160ed310 start + 2432
+1677809910348	Marionette	INFO	Stopped listening on port 61803
+JavaScript error: https://www.youtube.com/watch?v=RD2MrMT1gMk, line 12: TypeError: can't access dead object
+JavaScript error: https://www.youtube.com/watch?v=RD2MrMT1gMk, line 12: TypeError: can't access dead object
+JavaScript error: https://www.youtube.com/watch?v=RD2MrMT1gMk, line 12: TypeError: can't access dead object
+JavaScript error: https://www.youtube.com/watch?v=RD2MrMT1gMk, line 12: TypeError: can't access dead object
+JavaScript error: https://www.youtube.com/watch?v=RD2MrMT1gMk, line 12: TypeError: can't access dead object
+1677809917662	geckodriver	INFO	Listening on 127.0.0.1:61871
+1677809917670	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "--remote-debugging-port"  ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/ds/1gc2g5316rn11p6rh4jrhjvc0000gn/T/rust_mozprofilebLTCzi"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1677809918029	Marionette	INFO	Marionette enabled
+1677809918121	Marionette	INFO	Listening on port 61877
+console.error: "Warning: unrecognized command line flag -remote-allow-hosts\n"
+Read port: 61877
+WebDriver BiDi listening on ws://127.0.0.1:61872
+1677809918388	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/ds/1gc2g5316rn11p6rh4jrhjvc0000gn/T/rust_mozprofilebLTCzi/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:61872/devtools/browser/fb724cf5-e540-4c6f-a0fa-0176624773a0
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://consent.youtube.com."
+1677809923683	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+[2023-03-03T02:18:43Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:18:43Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:18:43Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:18:43Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:18:44Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:18:44Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:18:44Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:18:44Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+1677809929143	Marionette	INFO	Stopped listening on port 61877
+JavaScript error: https://www.youtube.com/feed/trending?cbrd=1&themeRefresh=1, line 12: TypeError: can't access dead object
+1677809929994	geckodriver	INFO	Listening on 127.0.0.1:61934
+1677809929996	geckodriver	INFO	Listening on 127.0.0.1:61933
+1677809930512	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "61935" "--r ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/ds/1gc2g5316rn11p6rh4jrhjvc0000gn/T/rust_mozprofileABdsSy"
+1677809930512	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "61936" "--r ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/ds/1gc2g5316rn11p6rh4jrhjvc0000gn/T/rust_mozprofilediXty7"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1   HIToolbox                           0x00007ff81feba726 _ZN15MenuBarInstance22EnsureAutoShowObserverEv + 102
+2   HIToolbox                           0x00007ff81feba2b8 _ZN15MenuBarInstance14EnableAutoShowEv + 52
+3   HIToolbox                           0x00007ff81fe5e908 SetMenuBarObscured + 408
+4   HIToolbox                           0x00007ff81fe5e4ca _ZN13HIApplication15HandleActivatedEP14OpaqueEventRefhP15OpaqueWindowPtrh + 164
+5   HIToolbox                           0x00007ff81fe58996 _ZN13HIApplication13EventObserverEjP14OpaqueEventRefPv + 252
+6   HIToolbox                           0x00007ff81fe20bd2 _NotifyEventLoopObservers + 153
+7   HIToolbox                           0x00007ff81fe583e6 AcquireEventFromQueue + 494
+8   HIToolbox                           0x00007ff81fe473ec ReceiveNextEventCommon + 285
+9   HIToolbox                           0x00007ff81fe472b3 _BlockUntilNextEventMatchingListInModeWithFilter + 70
+10  AppKit                              0x00007ff81964a2f3 _DPSNextEvent + 909
+11  AppKit                              0x00007ff819649174 -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:] + 1219
+12  XUL                                 0x00000001177e2fce _ZN14nsXPTCStubBase7Stub249Ev + 12293550
+13  XUL                                 0x00000001177e3d1a _ZN14nsXPTCStubBase7Stub249Ev + 12296954
+14  XUL                                 0x00000001177e44bc _ZN14nsXPTCStubBase7Stub249Ev + 12298908
+15  XUL                                 0x0000000116c1210b NS_NewLocalFileWithFSRef + 256523
+16  XUL                                 0x0000000116c18457 NS_NewLocalFileWithFSRef + 281943
+17  XUL                                 0x0000000116697d8e NS_InvokeByIndex + 142
+18  XUL                                 0x0000000116f26196 _ZN14nsXPTCStubBase7Stub249Ev + 3131254
+19  XUL                                 0x0000000116f28181 _ZN14nsXPTCStubBase7Stub249Ev + 3139425
+20  XUL                                 0x0000000117cbdf0d XRE_GetBootstrap + 288541
+21  XUL                                 0x0000000117cc8d5a XRE_GetBootstrap + 333162
+22  XUL                                 0x00000001180c4b8b XRE_GetBootstrap + 4510619
+23  ???                                 0x00000a57204e2da9 0x0 + 11369320426921
+24  ???                                 0x00000a57204ea4cc 0x0 + 11369320457420
+25  ???                                 0x00000a57204e04ee 0x0 + 11369320416494
+26  XUL                                 0x00000001180ccccf XRE_GetBootstrap + 4543711
+27  XUL                                 0x0000000117cb12f3 XRE_GetBootstrap + 236291
+28  XUL                                 0x0000000117cc966a XRE_GetBootstrap + 335482
+29  XUL                                 0x0000000117d7d344 XRE_GetBootstrap + 1071956
+30  XUL                                 0x0000000117cbdf0d XRE_GetBootstrap + 288541
+31  XUL                                 0x0000000117cc966a XRE_GetBootstrap + 335482
+32  XUL                                 0x0000000117d33395 XRE_GetBootstrap + 768933
+33  XUL                                 0x0000000116f206f9 _ZN14nsXPTCStubBase7Stub249Ev + 3108057
+34  XUL                                 0x0000000116c29b6a _ZN14nsXPTCStubBase7Stub249Ev + 330
+35  XUL                                 0x0000000116c28abb NS_NewLocalFileWithFSRef + 349115
+36  XUL                                 0x000000011b67da98 workerlz4_decompress + 973304
+37  XUL                                 0x0000000117c760c4 workerlz4_maxCompressedSize + 445156
+38  XUL                                 0x000000011b67905c workerlz4_decompress + 954300
+39  XUL                                 0x000000011b67947c workerlz4_decompress + 955356
+40  firefox-bin                         0x0000000105cedfe5 firefox-bin + 8165
+41  dyld                                0x00007ff8160ed310 start + 2432
+1677809931185	Marionette	INFO	Marionette enabled
+1677809931342	Marionette	INFO	Marionette enabled
+1677809931375	Marionette	INFO	Listening on port 61949
+console.error: "Warning: unrecognized command line flag -remote-allow-hosts\n"
+1677809931425	Marionette	INFO	Listening on port 61950
+Read port: 61950
+Read port: 61949
+console.error: "Warning: unrecognized command line flag -remote-allow-hosts\n"
+WebDriver BiDi listening on ws://127.0.0.1:61935
+1677809931670	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+WebDriver BiDi listening on ws://127.0.0.1:61936
+1677809931776	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/ds/1gc2g5316rn11p6rh4jrhjvc0000gn/T/rust_mozprofileABdsSy/search.json.mozlz4", (void 0)))
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/ds/1gc2g5316rn11p6rh4jrhjvc0000gn/T/rust_mozprofilediXty7/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:61935/devtools/browser/37033855-073d-4835-ade9-d4f596f2a7d6
+DevTools listening on ws://127.0.0.1:61936/devtools/browser/bfd02e49-3316-447a-9e16-48a78414b4fb
+1677809935278	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+[2023-03-03T02:18:55Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:18:55Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:18:55Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:18:55Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+1677809935796	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+[2023-03-03T02:18:55Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:18:55Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:18:55Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:18:55Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:18:56Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:18:56Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:18:56Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:18:56Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:18:57Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:18:57Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:18:57Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:18:57Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+JavaScript warning: https://pagead2.googlesyndication.com/bg/9sSoBG9D25FhvYLg3_iwWJ49bM2Qm57VxEM1rvvqfaE.js line 2 > eval line 7605 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/9sSoBG9D25FhvYLg3_iwWJ49bM2Qm57VxEM1rvvqfaE.js line 2 > eval line 7608 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[2023-03-03T02:19:03Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:19:03Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:19:03Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:19:03Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+JavaScript warning: https://pagead2.googlesyndication.com/bg/9sSoBG9D25FhvYLg3_iwWJ49bM2Qm57VxEM1rvvqfaE.js line 2 > eval line 2826 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[2023-03-03T02:19:03Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:19:03Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:19:03Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:19:03Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+JavaScript warning: https://pagead2.googlesyndication.com/bg/9sSoBG9D25FhvYLg3_iwWJ49bM2Qm57VxEM1rvvqfaE.js line 2 > eval line 3004 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/9sSoBG9D25FhvYLg3_iwWJ49bM2Qm57VxEM1rvvqfaE.js line 2 > eval line 6509 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/9sSoBG9D25FhvYLg3_iwWJ49bM2Qm57VxEM1rvvqfaE.js line 2 > eval line 649 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1   HIToolbox                           0x00007ff81fe470c2 _ZN15MenuBarInstance22RemoveAutoShowObserverEv + 30
+2   HIToolbox                           0x00007ff81fe5e7e3 SetMenuBarObscured + 115
+3   HIToolbox                           0x00007ff81fe6529e _ZN13HIApplication11FrontUILostEv + 34
+4   HIToolbox                           0x00007ff81fe5e622 _ZN13HIApplication15HandleActivatedEP14OpaqueEventRefhP15OpaqueWindowPtrh + 508
+5   HIToolbox                           0x00007ff81fe58950 _ZN13HIApplication13EventObserverEjP14OpaqueEventRefPv + 182
+6   HIToolbox                           0x00007ff81fe20bd2 _NotifyEventLoopObservers + 153
+7   HIToolbox                           0x00007ff81fe583e6 AcquireEventFromQueue + 494
+8   HIToolbox                           0x00007ff81fe475a4 ReceiveNextEventCommon + 725
+9   HIToolbox                           0x00007ff81fe472b3 _BlockUntilNextEventMatchingListInModeWithFilter + 70
+10  AppKit                              0x00007ff81964a2f3 _DPSNextEvent + 909
+11  AppKit                              0x00007ff819649174 -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:] + 1219
+12  XUL                                 0x00000001177e2fce _ZN14nsXPTCStubBase7Stub249Ev + 12293550
+13  AppKit                              0x00007ff81963b7b7 -[NSApplication run] + 586
+14  XUL                                 0x00000001177e3e91 _ZN14nsXPTCStubBase7Stub249Ev + 12297329
+15  XUL                                 0x000000011b5f504c workerlz4_decompress + 413612
+16  XUL                                 0x0000000117c76459 workerlz4_maxCompressedSize + 446073
+17  XUL                                 0x000000011b67905c workerlz4_decompress + 954300
+18  XUL                                 0x000000011b67947c workerlz4_decompress + 955356
+19  firefox-bin                         0x0000000105cedfe5 firefox-bin + 8165
+20  dyld                                0x00007ff8160ed310 start + 2432
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1677809993760	geckodriver	INFO	Listening on 127.0.0.1:62080
+1677809993770	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "--remote-debugging-port"  ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/ds/1gc2g5316rn11p6rh4jrhjvc0000gn/T/rust_mozprofileaEhl0l"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1677809994109	Marionette	INFO	Marionette enabled
+1677809994162	Marionette	INFO	Listening on port 62086
+Read port: 62086
+console.error: "Warning: unrecognized command line flag -remote-allow-hosts\n"
+WebDriver BiDi listening on ws://127.0.0.1:62081
+1677809994610	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/ds/1gc2g5316rn11p6rh4jrhjvc0000gn/T/rust_mozprofileaEhl0l/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:62081/devtools/browser/cc5054ba-05a2-400e-8a38-11ce2964a8f1
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://consent.youtube.com."
+1677809999649	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+[2023-03-03T02:19:59Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:19:59Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:19:59Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:19:59Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:20:00Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:20:00Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:20:00Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:20:00Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+1677810004507	Marionette	INFO	Stopped listening on port 62086
+JavaScript error: https://www.youtube.com/feed/trending?cbrd=1&themeRefresh=1, line 12: TypeError: can't access dead object
+1677810005218	geckodriver	INFO	Listening on 127.0.0.1:62140
+1677810005219	geckodriver	INFO	Listening on 127.0.0.1:62139
+1677810005740	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "62142" "--r ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/ds/1gc2g5316rn11p6rh4jrhjvc0000gn/T/rust_mozprofile6mCTnH"
+1677810005740	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "62141" "--r ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/ds/1gc2g5316rn11p6rh4jrhjvc0000gn/T/rust_mozprofileHDA5wF"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1677810006153	Marionette	INFO	Marionette enabled
+1   HIToolbox                           0x00007ff81feba726 _ZN15MenuBarInstance22EnsureAutoShowObserverEv + 102
+2   HIToolbox                           0x00007ff81feba2b8 _ZN15MenuBarInstance14EnableAutoShowEv + 52
+3   HIToolbox                           0x00007ff81fe5e908 SetMenuBarObscured + 408
+4   HIToolbox                           0x00007ff81fe5e4ca _ZN13HIApplication15HandleActivatedEP14OpaqueEventRefhP15OpaqueWindowPtrh + 164
+5   HIToolbox                           0x00007ff81fe58996 _ZN13HIApplication13EventObserverEjP14OpaqueEventRefPv + 252
+6   HIToolbox                           0x00007ff81fe20bd2 _NotifyEventLoopObservers + 153
+7   HIToolbox                           0x00007ff81fe583e6 AcquireEventFromQueue + 494
+8   HIToolbox                           0x00007ff81fe473ec ReceiveNextEventCommon + 285
+9   HIToolbox                           0x00007ff81fe472b3 _BlockUntilNextEventMatchingListInModeWithFilter + 70
+10  AppKit                              0x00007ff81964a2f3 _DPSNextEvent + 909
+11  AppKit                              0x00007ff819649174 -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:] + 1219
+12  XUL                                 0x000000011f4e2fce _ZN14nsXPTCStubBase7Stub249Ev + 12293550
+13  XUL                                 0x000000011f4e3d1a _ZN14nsXPTCStubBase7Stub249Ev + 12296954
+14  XUL                                 0x000000011f4e44bc _ZN14nsXPTCStubBase7Stub249Ev + 12298908
+15  XUL                                 0x000000011e91210b NS_NewLocalFileWithFSRef + 256523
+16  XUL                                 0x000000011e918457 NS_NewLocalFileWithFSRef + 281943
+17  XUL                                 0x000000011e397d8e NS_InvokeByIndex + 142
+18  XUL                                 0x000000011ec26196 _ZN14nsXPTCStubBase7Stub249Ev + 3131254
+19  XUL                                 0x000000011ec28181 _ZN14nsXPTCStubBase7Stub249Ev + 3139425
+20  XUL                                 0x000000011f9bdf0d XRE_GetBootstrap + 288541
+21  XUL                                 0x000000011f9c966a XRE_GetBootstrap + 335482
+22  XUL                                 0x000000011fdea44e XRE_GetBootstrap + 4664414
+23  ???                                 0x00003d399cc26d05 0x0 + 67317652417797
+24  ???                                 0x00003d399cc304cc 0x0 + 67317652456652
+25  ???                                 0x00003d399cc264ee 0x0 + 67317652415726
+26  XUL                                 0x000000011fdccccf XRE_GetBootstrap + 4543711
+27  XUL                                 0x000000011f9b12f3 XRE_GetBootstrap + 236291
+28  XUL                                 0x000000011f9c966a XRE_GetBootstrap + 335482
+29  XUL                                 0x000000011fa7d344 XRE_GetBootstrap + 1071956
+30  XUL                                 0x000000011f9bdf0d XRE_GetBootstrap + 288541
+31  XUL                                 0x000000011f9c966a XRE_GetBootstrap + 335482
+32  XUL                                 0x000000011fa33395 XRE_GetBootstrap + 768933
+33  XUL                                 0x000000011ec206f9 _ZN14nsXPTCStubBase7Stub249Ev + 3108057
+34  XUL                                 0x000000011e929b6a _ZN14nsXPTCStubBase7Stub249Ev + 330
+35  XUL                                 0x000000011e928abb NS_NewLocalFileWithFSRef + 349115
+36  XUL                                 0x000000012337da98 workerlz4_decompress + 973304
+37  XUL                                 0x000000011f9760c4 workerlz4_maxCompressedSize + 445156
+38  XUL                                 0x000000012337905c workerlz4_decompress + 954300
+39  XUL                                 0x000000012337947c workerlz4_decompress + 955356
+40  firefox-bin                         0x000000010d9cdfe5 firefox-bin + 8165
+41  dyld                                0x00007ff8160ed310 start + 2432
+1677810006263	Marionette	INFO	Listening on port 62155
+1677810006266	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag -remote-allow-hosts\n"
+Read port: 62155
+1677810006361	Marionette	INFO	Listening on port 62157
+console.error: "Warning: unrecognized command line flag -remote-allow-hosts\n"
+Read port: 62157
+WebDriver BiDi listening on ws://127.0.0.1:62141
+1677810006585	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+WebDriver BiDi listening on ws://127.0.0.1:62142
+1677810006704	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/ds/1gc2g5316rn11p6rh4jrhjvc0000gn/T/rust_mozprofileHDA5wF/search.json.mozlz4", (void 0)))
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/ds/1gc2g5316rn11p6rh4jrhjvc0000gn/T/rust_mozprofile6mCTnH/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:62141/devtools/browser/68ae9cfc-b475-4d0a-8be9-e97fa0a5f563
+DevTools listening on ws://127.0.0.1:62142/devtools/browser/20463e49-c2df-4c8c-8991-5b86fea56f44
+JavaScript warning: https://pagead2.googlesyndication.com/bg/9sSoBG9D25FhvYLg3_iwWJ49bM2Qm57VxEM1rvvqfaE.js line 2 > eval line 3653 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[2023-03-03T02:20:11Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:20:11Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:20:11Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:20:11Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:20:12Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:20:12Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:20:12Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:20:12Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:20:17Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:20:17Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:20:17Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:20:17Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+JavaScript warning: https://pagead2.googlesyndication.com/bg/9sSoBG9D25FhvYLg3_iwWJ49bM2Qm57VxEM1rvvqfaE.js line 2 > eval line 1695 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[2023-03-03T02:20:17Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:20:17Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:20:17Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:20:17Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+JavaScript warning: https://pagead2.googlesyndication.com/bg/9sSoBG9D25FhvYLg3_iwWJ49bM2Qm57VxEM1rvvqfaE.js line 2 > eval line 4635 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/9sSoBG9D25FhvYLg3_iwWJ49bM2Qm57VxEM1rvvqfaE.js line 2 > eval line 7161 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/9sSoBG9D25FhvYLg3_iwWJ49bM2Qm57VxEM1rvvqfaE.js line 2 > eval line 413 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1   HIToolbox                           0x00007ff81fe470c2 _ZN15MenuBarInstance22RemoveAutoShowObserverEv + 30
+2   HIToolbox                           0x00007ff81fe5e7e3 SetMenuBarObscured + 115
+3   HIToolbox                           0x00007ff81fe6529e _ZN13HIApplication11FrontUILostEv + 34
+4   HIToolbox                           0x00007ff81fe5e622 _ZN13HIApplication15HandleActivatedEP14OpaqueEventRefhP15OpaqueWindowPtrh + 508
+5   HIToolbox                           0x00007ff81fe58950 _ZN13HIApplication13EventObserverEjP14OpaqueEventRefPv + 182
+6   HIToolbox                           0x00007ff81fe20bd2 _NotifyEventLoopObservers + 153
+7   HIToolbox                           0x00007ff81fe583e6 AcquireEventFromQueue + 494
+8   HIToolbox                           0x00007ff81fe475a4 ReceiveNextEventCommon + 725
+9   HIToolbox                           0x00007ff81fe472b3 _BlockUntilNextEventMatchingListInModeWithFilter + 70
+10  AppKit                              0x00007ff81964a2f3 _DPSNextEvent + 909
+11  AppKit                              0x00007ff819649174 -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:] + 1219
+12  XUL                                 0x000000011f4e2fce _ZN14nsXPTCStubBase7Stub249Ev + 12293550
+13  AppKit                              0x00007ff81963b7b7 -[NSApplication run] + 586
+14  XUL                                 0x000000011f4e3e91 _ZN14nsXPTCStubBase7Stub249Ev + 12297329
+15  XUL                                 0x00000001232f504c workerlz4_decompress + 413612
+16  XUL                                 0x000000011f976459 workerlz4_maxCompressedSize + 446073
+17  XUL                                 0x000000012337905c workerlz4_decompress + 954300
+18  XUL                                 0x000000012337947c workerlz4_decompress + 955356
+19  firefox-bin                         0x000000010d9cdfe5 firefox-bin + 8165
+20  dyld                                0x00007ff8160ed310 start + 2432
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+1677810044794	geckodriver	INFO	Listening on 127.0.0.1:62291
+1677810044803	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "--remote-debugging-port"  ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/ds/1gc2g5316rn11p6rh4jrhjvc0000gn/T/rust_mozprofileypUlje"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1677810045144	Marionette	INFO	Marionette enabled
+1677810045196	Marionette	INFO	Listening on port 62297
+Read port: 62297
+console.error: "Warning: unrecognized command line flag -remote-allow-hosts\n"
+WebDriver BiDi listening on ws://127.0.0.1:62292
+1677810045652	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/ds/1gc2g5316rn11p6rh4jrhjvc0000gn/T/rust_mozprofileypUlje/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:62292/devtools/browser/97a6e4b3-eee9-4669-b8cd-df91b9317712
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://consent.youtube.com."
+1677810050671	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+[2023-03-03T02:21:01Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:21:01Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:21:01Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:21:01Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+1677810063223	Marionette	INFO	Stopped listening on port 62297
+JavaScript error: https://www.youtube.com/feed/trending?cbrd=1&themeRefresh=1, line 12: TypeError: can't access dead object
+1677810063949	geckodriver	INFO	Listening on 127.0.0.1:62355
+1677810063951	geckodriver	INFO	Listening on 127.0.0.1:62354
+1677810064472	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "62357" "--r ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/ds/1gc2g5316rn11p6rh4jrhjvc0000gn/T/rust_mozprofilebTmAda"
+1677810064472	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "62356" "--r ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/ds/1gc2g5316rn11p6rh4jrhjvc0000gn/T/rust_mozprofile810j2R"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1677810064892	Marionette	INFO	Marionette enabled
+1   HIToolbox                           0x00007ff81feba726 _ZN15MenuBarInstance22EnsureAutoShowObserverEv + 102
+2   HIToolbox                           0x00007ff81feba2b8 _ZN15MenuBarInstance14EnableAutoShowEv + 52
+3   HIToolbox                           0x00007ff81fe5e908 SetMenuBarObscured + 408
+4   HIToolbox                           0x00007ff81fe5e4ca _ZN13HIApplication15HandleActivatedEP14OpaqueEventRefhP15OpaqueWindowPtrh + 164
+5   HIToolbox                           0x00007ff81fe58996 _ZN13HIApplication13EventObserverEjP14OpaqueEventRefPv + 252
+6   HIToolbox                           0x00007ff81fe20bd2 _NotifyEventLoopObservers + 153
+7   HIToolbox                           0x00007ff81fe583e6 AcquireEventFromQueue + 494
+8   HIToolbox                           0x00007ff81fe473ec ReceiveNextEventCommon + 285
+9   HIToolbox                           0x00007ff81fe472b3 _BlockUntilNextEventMatchingListInModeWithFilter + 70
+10  AppKit                              0x00007ff81964a2f3 _DPSNextEvent + 909
+11  AppKit                              0x00007ff819649174 -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:] + 1219
+12  XUL                                 0x0000000113ce2fce _ZN14nsXPTCStubBase7Stub249Ev + 12293550
+13  XUL                                 0x0000000113ce3d1a _ZN14nsXPTCStubBase7Stub249Ev + 12296954
+14  XUL                                 0x0000000113ce44bc _ZN14nsXPTCStubBase7Stub249Ev + 12298908
+15  XUL                                 0x000000011311210b NS_NewLocalFileWithFSRef + 256523
+16  XUL                                 0x0000000113118457 NS_NewLocalFileWithFSRef + 281943
+17  XUL                                 0x0000000112b97d8e NS_InvokeByIndex + 142
+18  XUL                                 0x0000000113426196 _ZN14nsXPTCStubBase7Stub249Ev + 3131254
+19  XUL                                 0x0000000113428181 _ZN14nsXPTCStubBase7Stub249Ev + 3139425
+20  XUL                                 0x00000001141bdf0d XRE_GetBootstrap + 288541
+21  XUL                                 0x00000001141c966a XRE_GetBootstrap + 335482
+22  XUL                                 0x00000001145ea44e XRE_GetBootstrap + 4664414
+23  ???                                 0x00000fbf9d8d2d05 0x0 + 17315656445189
+24  ???                                 0x00000fbf9d8dc4cc 0x0 + 17315656484044
+25  ???                                 0x00000fbf9d8d24ee 0x0 + 17315656443118
+26  XUL                                 0x00000001145ccccf XRE_GetBootstrap + 4543711
+27  XUL                                 0x00000001141b12f3 XRE_GetBootstrap + 236291
+28  XUL                                 0x00000001141c966a XRE_GetBootstrap + 335482
+29  XUL                                 0x000000011427d344 XRE_GetBootstrap + 1071956
+30  XUL                                 0x00000001141bdf0d XRE_GetBootstrap + 288541
+31  XUL                                 0x00000001141c966a XRE_GetBootstrap + 335482
+32  XUL                                 0x0000000114233395 XRE_GetBootstrap + 768933
+33  XUL                                 0x00000001134206f9 _ZN14nsXPTCStubBase7Stub249Ev + 3108057
+34  XUL                                 0x0000000113129b6a _ZN14nsXPTCStubBase7Stub249Ev + 330
+35  XUL                                 0x0000000113128abb NS_NewLocalFileWithFSRef + 349115
+36  XUL                                 0x0000000117b7da98 workerlz4_decompress + 973304
+37  XUL                                 0x00000001141760c4 workerlz4_maxCompressedSize + 445156
+38  XUL                                 0x0000000117b7905c workerlz4_decompress + 954300
+39  XUL                                 0x0000000117b7947c workerlz4_decompress + 955356
+40  firefox-bin                         0x00000001021e6fe5 firefox-bin + 8165
+41  dyld                                0x00007ff8160ed310 start + 2432
+1677810064999	Marionette	INFO	Marionette enabled
+1677810065010	Marionette	INFO	Listening on port 62370
+console.error: "Warning: unrecognized command line flag -remote-allow-hosts\n"
+Read port: 62370
+1677810065093	Marionette	INFO	Listening on port 62372
+console.error: "Warning: unrecognized command line flag -remote-allow-hosts\n"
+Read port: 62372
+WebDriver BiDi listening on ws://127.0.0.1:62356
+1677810065367	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+WebDriver BiDi listening on ws://127.0.0.1:62357
+1677810065443	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/ds/1gc2g5316rn11p6rh4jrhjvc0000gn/T/rust_mozprofile810j2R/search.json.mozlz4", (void 0)))
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/ds/1gc2g5316rn11p6rh4jrhjvc0000gn/T/rust_mozprofilebTmAda/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:62356/devtools/browser/394b854c-6310-452b-8fb8-bbf967566059
+DevTools listening on ws://127.0.0.1:62357/devtools/browser/07dc67d3-232c-4d0a-841f-4ce88e5db33e
+[2023-03-03T02:21:08Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:21:08Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+1677810069253	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+[2023-03-03T02:21:09Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:21:09Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:21:09Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:21:09Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+JavaScript warning: https://pagead2.googlesyndication.com/bg/9sSoBG9D25FhvYLg3_iwWJ49bM2Qm57VxEM1rvvqfaE.js line 2 > eval line 227 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[2023-03-03T02:21:10Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:21:10Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:21:10Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:21:10Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+JavaScript warning: https://pagead2.googlesyndication.com/bg/9sSoBG9D25FhvYLg3_iwWJ49bM2Qm57VxEM1rvvqfaE.js line 2 > eval line 2185 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[2023-03-03T02:21:12Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:21:12Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:21:12Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:21:12Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:21:16Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:21:16Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:21:16Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:21:16Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+JavaScript warning: https://pagead2.googlesyndication.com/bg/9sSoBG9D25FhvYLg3_iwWJ49bM2Qm57VxEM1rvvqfaE.js line 2 > eval line 1864 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[2023-03-03T02:21:18Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:21:18Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:21:18Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-03-03T02:21:18Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+JavaScript warning: https://pagead2.googlesyndication.com/bg/9sSoBG9D25FhvYLg3_iwWJ49bM2Qm57VxEM1rvvqfaE.js line 2 > eval line 4729 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/9sSoBG9D25FhvYLg3_iwWJ49bM2Qm57VxEM1rvvqfaE.js line 2 > eval line 2895 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/9sSoBG9D25FhvYLg3_iwWJ49bM2Qm57VxEM1rvvqfaE.js line 2 > eval line 3858 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
