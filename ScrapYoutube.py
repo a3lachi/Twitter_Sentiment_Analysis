@@ -12,9 +12,9 @@ import pandas as pd
 
 
 def GetTrendingVideos() :
-	
+
 	options = Options()
-	##options.headless = True
+	options.headless = True
 	driver_trending = webdriver.Firefox(options=options)
 
 	driver_trending.get('https://www.youtube.com/feed/trending')
@@ -33,6 +33,24 @@ def GetTrendingVideos() :
 
 	df = pd.DataFrame(Data,columns=['Video','Link'])
 
-	print(df.head(10))
+	print('Successfully scraped trending videos links.')
+
 	return df
 	
+
+
+
+def ScrapComments(driver) :
+	comz = []
+	comments = driver.find_element(By.ID,"comments")
+	coms = comments.find_elements(By.XPATH,"//div[@id='comment-content']//yt-formatted-string[@id='content-text']")
+	for a in coms :
+		comz.append(a.text)
+
+	return comz 
+
+
+
+df = GetTrendingVideos()
+
+
